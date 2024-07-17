@@ -79,7 +79,7 @@ export default function Pricing() {
             Looking for a company solution?
           </h3>
           <Link
-            href="/support"
+            href="/contact-us"
             className="text-base text-dark-text underline-offset-2 duration-200 hover:text-primary hover:underline"
           >
             Contact our team to get a quote.

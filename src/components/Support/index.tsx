@@ -1,6 +1,6 @@
 export default function Support() {
   return (
-    <section id="support" className="pt-14 sm:pt-20 lg:pt-[130px]">
+    <section id="contact-us" className="pt-14 sm:pt-20 lg:pt-[130px]">
       <div className="px-4 xl:container">
         <div className="-mx-4 flex flex-wrap justify-center">
           <div className="w-full px-4 xl:w-10/12">
@@ -11,7 +11,10 @@ export default function Support() {
                     {" "}
                     SUPPORT{" "}
                   </span>
-                  <h2 className="mb-5 font-heading text-3xl font-semibold text-dark dark:text-white sm:text-4xl md:text-[50px] md:leading-[60px]">
+                  <h2
+                    id="contact-us"
+                    className="mb-5 font-heading text-3xl font-semibold text-dark dark:text-white sm:text-4xl md:text-[50px] md:leading-[60px]"
+                  >
                     Need Any Help? Say hello
                   </h2>
                   <p className="text-base text-dark-text">

@@ -28,50 +28,56 @@ export const navbarData: NavbarItem[] = [
   },
   {
     id: uuid(),
-    title: "Pages",
-    submenu: [
-      {
-        id: uuid(),
-        title: "Home",
-        href: "/",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Docs",
-        href: "/docs",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Support",
-        href: "/support",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Blog",
-        href: "/blog",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Sign in",
-        href: "/auth/signin",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Sign up",
-        href: "/auth/signup",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Error 404",
-        href: "/error",
-        external: false,
-      },
-    ],
+    title: "Contact Us",
+    href: "#contact-us",
+    external: false,
   },
+  // {
+  //   id: uuid(),
+  //   title: "Pages",
+  //   submenu: [
+  //     {
+  //       id: uuid(),
+  //       title: "Home",
+  //       href: "/",
+  //       external: false,
+  //     },
+  //     {
+  //       id: uuid(),
+  //       title: "Docs",
+  //       href: "/docs",
+  //       external: false,
+  //     },
+  //     {
+  //       id: uuid(),
+  //       title: "Support",
+  //       href: "/support",
+  //       external: false,
+  //     },
+  //     {
+  //       id: uuid(),
+  //       title: "Blog",
+  //       href: "/blog",
+  //       external: false,
+  //     },
+  //     {
+  //       id: uuid(),
+  //       title: "Sign in",
+  //       href: "/auth/signin",
+  //       external: false,
+  //     },
+  //     {
+  //       id: uuid(),
+  //       title: "Sign up",
+  //       href: "/auth/signup",
+  //       external: false,
+  //     },
+  //     {
+  //       id: uuid(),
+  //       title: "Error 404",
+  //       href: "/error",
+  //       external: false,
+  //     },
+  //   ],
+  // },
 ];

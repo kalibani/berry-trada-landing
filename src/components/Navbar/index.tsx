@@ -58,19 +58,21 @@ export default function Navbar() {
           <div className="relative z-[99] max-w-[250px] pr-4 lg:w-full lg:max-w-[220px] xl:max-w-[280px]">
             <Link href="/" className="inline-block">
               <Image
-                src="/images/logo/logo-dark.svg"
+                src="/images/Logo-uk-bebas/Transparan.png"
                 alt="logo"
                 width={215}
                 height={50}
                 className="hidden dark:block"
               />
-              <Image
-                src="/images/logo/logo-light.svg"
-                alt="logo"
-                width={215}
-                height={50}
-                className="dark:hidden"
-              />
+              <div className="png-container">
+                <Image
+                  src="/images/Logo-uk-bebas/Transparan.png"
+                  alt="logo"
+                  width={215}
+                  height={50}
+                  className="dark:hidden"
+                />
+              </div>
             </Link>
           </div>
 
@@ -145,7 +147,7 @@ export default function Navbar() {
                 </ul>
               </nav>
             </div>
-            <div className="absolute bottom-0 left-0 flex w-full items-center justify-between space-x-5 self-end p-5 lg:static lg:w-auto lg:self-center lg:p-0">
+            {/* <div className="absolute bottom-0 left-0 flex w-full items-center justify-between space-x-5 self-end p-5 lg:static lg:w-auto lg:self-center lg:p-0">
               {session ? (
                 <>
                   <p className="whitespace-nowrap text-dark-text dark:text-white">
@@ -175,7 +177,7 @@ export default function Navbar() {
                   </Link>
                 </>
               )}
-            </div>
+            </div> */}
           </div>
 
           <div className="absolute right-5 top-1/2 z-50 flex -translate-y-1/2 items-center lg:static lg:ml-4 lg:translate-y-0 xl:ml-6">
