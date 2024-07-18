@@ -1,0 +1,25 @@
+{
+  "Navbar": {
+    "Services": "Layanan",
+    "About": "Tentang",
+    "Portfolio": "Portfolio",
+    "Pricing": "Harga",
+    "ContactUs": "Hubungi Kami"
+  },
+  "Hero": {
+    "title": "Eksportir dan Pengolah Jahe Terkemuka",
+    "tagline": "Mitra Terpercaya Anda dalam",
+    "word1": "Ekspor Jahe",
+    "word2": "Pemasok Jahe",
+    "word3": "Pengolahan Jahe",
+    "word4": "Pencucian Jahe",
+    "description": "Di Berry Trada, kami memahami pentingnya mengirimkan jahe berkualitas premium secara global. Dengan menggunakan mesin canggih dan bekerja sama dengan <brin>Badan Riset dan Inovasi Nasional (BRIN)</brin>  dalam praktik pasca panen, kami memastikan produk jahe terbaik dengan kualitas terjamin.",
+    "ContactUs": "Hubungi Kami",
+    "HowWeWork": "Cara Kami Bekerja"
+  },
+  "Services": {
+    "services": "Layanan",
+    "title": "Memodernisasi Pengolahan Jahe",
+    "paragraph": "Teknik pengolahan modern kami memastikan setiap potongan jahe yang kami tangani tetap segar, beraroma, dan bernutrisi alami. Menggunakan sistem pencucian dan pengemasan canggih yang meminimalkan kerusakan dan memaksimalkan masa simpan, kami menetapkan standar baru dalam industri ini."
+  }
+}

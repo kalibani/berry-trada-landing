@@ -4,8 +4,8 @@ import { v4 as uuid } from "uuid";
 export const navbarData: NavbarItem[] = [
   {
     id: uuid(),
-    title: "Features",
-    href: "#features",
+    title: "Services",
+    href: "#services",
     external: false,
   },
   {
@@ -28,7 +28,7 @@ export const navbarData: NavbarItem[] = [
   },
   {
     id: uuid(),
-    title: "Contact Us",
+    title: "ContactUs",
     href: "#contact-us",
     external: false,
   },

@@ -1,9 +1,15 @@
 "use client";
 
+import { useTranslate } from "@/hooks/useTranslate";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
+import Link from "next/link";
 import { Typewriter } from "react-simple-typewriter";
 
 export default function Hero() {
+  const t = useTranslations("Hero");
+  const { language } = useTranslate();
+
   return (
     <section
       id="home"
@@ -12,20 +18,16 @@ export default function Hero() {
       <div className="px-4 xl:container">
         <div className="-mx-4 flex flex-wrap items-center">
           <div className="w-full px-3 lg:w-1/2">
-            <div className="mx-auto mb-12 max-w-[550px] text-center lg:mb-0 lg:ml-0 lg:text-left">
+            <div className="mx-auto mb-12 max-w-[650px] text-center lg:mb-0 lg:ml-0 lg:text-left">
               <span className="mb-8 inline-block rounded-full bg-primary bg-opacity-5 px-5 py-[10px] font-heading text-base text-primary dark:bg-white dark:bg-opacity-10 dark:text-white">
                 <span className="mr-2 inline-block h-2 w-2 rounded-full bg-primary"></span>
-                A leading Ginger Exporter and Processor
+                {t("title")}
               </span>
+
               <h1 className="mb-5 font-heading text-2xl font-semibold dark:text-white sm:text-4xl md:text-[50px] md:leading-[60px]">
-                Your Trusted Partner in{" "}
+                {t("tagline")} {language === "en" ? <br></br> : null}
                 <Typewriter
-                  words={[
-                    "Ginger Exports",
-                    "Ginger Processor",
-                    "Ginger Packer",
-                    "Ginger Supplier",
-                  ]}
+                  words={[t("word1"), t("word2"), t("word3"), t("word4")]}
                   cursor
                   loop={0}
                   cursorStyle="|"
@@ -35,18 +37,24 @@ export default function Hero() {
                 />
               </h1>
               <p className="mb-12 text-base text-dark-text">
-                At Berry Trada, we understand the importance of delivering
-                premium quality ginger globally. Using advanced machinery and
-                collaboration with the National Research and Innovation Agency
-                (BRIN) on post-harvest practices, leading to the best quality
-                and guaranteed product.
+                {t.rich("description", {
+                  brin: (chunks) => (
+                    <Link
+                      href="https://brin.go.id/en"
+                      target="_blank"
+                      className="font-semibold italic text-primary"
+                    >
+                      {chunks}
+                    </Link>
+                  ),
+                })}
               </p>
               <div className="flex flex-wrap items-center justify-center lg:justify-start">
                 <a
                   href="#contact-us"
                   className="inline-flex items-center rounded bg-primary px-6 py-[10px] font-heading text-base text-white hover:bg-opacity-90 md:px-8 md:py-[14px]"
                 >
-                  Contact Us
+                  {t("ContactUs")}
                   <span className="pl-3">
                     <svg
                       width="16"
@@ -76,13 +84,13 @@ export default function Hero() {
                       <path d="M19.376 12.416L8.777 19.482C8.70171 19.5321 8.61423 19.5608 8.52389 19.5652C8.43355 19.5695 8.34373 19.5492 8.264 19.5065C8.18427 19.4639 8.1176 19.4003 8.07111 19.3228C8.02462 19.2452 8.00005 19.1564 8 19.066V4.934C8.00005 4.84356 8.02462 4.75482 8.07111 4.67724C8.1176 4.59966 8.18427 4.53615 8.264 4.49346C8.34373 4.45077 8.43355 4.43051 8.52389 4.43483C8.61423 4.43915 8.70171 4.46789 8.777 4.518L19.376 11.584C19.4445 11.6297 19.5006 11.6915 19.5395 11.7641C19.5783 11.8367 19.5986 11.9177 19.5986 12C19.5986 12.0823 19.5783 12.1633 19.5395 12.2359C19.5006 12.3085 19.4445 12.3703 19.376 12.416Z" />
                     </svg>
                   </span>
-                  How We Work
+                  {t("HowWeWork")}
                 </a>
               </div>
             </div>
           </div>
           <div className="w-full px-4 lg:w-1/2">
-            <div className="wow fadeInRight relative z-30 mx-auto h-[560px] w-full max-w-[700px] lg:ml-0">
+            <div className="wow fadeInRight relative z-30 mx-auto h-[360px] w-full max-w-[700px] sm:h-[560px] lg:ml-0">
               <div className="absolute right-0 top-0 lg:w-11/12">
                 <Image
                   src="/images/hero/ginger-hero.webp"

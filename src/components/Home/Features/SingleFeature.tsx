@@ -8,7 +8,7 @@ export default function SingleFeature({ feature }: { feature: Feature }) {
           {feature?.icon}
         </div>
         <div>
-          <h3 className="mb-3 font-heading text-xl font-medium text-dark dark:text-white sm:text-2xl md:mb-5">
+          <h3 className="mb-3 font-heading text-xl font-medium text-dark dark:text-white sm:text-lg md:mb-5">
             {feature?.title}
           </h3>
           <p className="text-base text-dark-text">{feature?.description}</p>

@@ -32,9 +32,7 @@ export default function RootLayout({
         >
           <AuthProvider>
             <ToasterContext />
-            <Navbar />
             {children}
-            <Footer />
           </AuthProvider>
         </ThemeProvider>
       </body>

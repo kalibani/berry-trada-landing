@@ -1,0 +1,25 @@
+{
+  "Navbar": {
+    "Services": "Services",
+    "About": "About",
+    "Portfolio": "Portfolio",
+    "Pricing": "Pricing",
+    "ContactUs": "Contact Us"
+  },
+  "Hero": {
+    "title": "A leading Ginger Exporter and Processor",
+    "tagline": "Your Trusted Partner in",
+    "word1": "Ginger Exports",
+    "word2": "Ginger Suppliers",
+    "word3": "Processing Ginger",
+    "word4": "Washing Ginger",
+    "description": "At Berry Trada, we understand the importance of delivering premium quality ginger globally. Using advanced machinery and collaboration with the <brin>Indonesian National Research and Innovation Agency (BRIN)</brin> on post-harvest practices, leading to the best quality and guaranteed product.",
+    "ContactUs": "Contact Us",
+    "HowWeWork": "How We Work"
+  },
+  "Services": {
+    "services": "Services",
+    "title": "Modernizing Ginger Processing",
+    "paragraph": "Our modern processing techniques ensure that every piece of ginger we handle retains its natural freshness, flavor, and nutritional value. Using advanced washing and packing systems that minimize damage and maximize shelf life, setting a new standard in the industry."
+  }
+}
