@@ -19,7 +19,19 @@
   },
   "Services": {
     "services": "Services",
-    "title": "Modernizing Ginger Processing",
-    "paragraph": "Our modern processing techniques ensure that every piece of ginger we handle retains its natural freshness, flavor, and nutritional value. Using advanced washing and packing systems that minimize damage and maximize shelf life, setting a new standard in the industry."
+    "tagline": "Modernizing Ginger Processing",
+    "paragraph": "Our modern processing techniques ensure that every piece of ginger we handle retains its natural freshness, flavor, and nutritional value. Using advanced washing and packing systems that minimize damage and maximize shelf life, setting a new standard in the industry.",
+    "ExportServiceTitle": "Export Ginger",
+    "ExportServiceDescription": "Berry Trada offers the finest Indonesian ginger for export. We ensure every shipment is fresh and high-quality, making us the go-to choice for importers around the globe.",
+    "WashingServiceTitle": "Ginger Washing Service",
+    "WashingServiceDescription": "Our ginger washing service uses the latest methods to clean your ginger thoroughly. We make sure your ginger is spotless, fresh, and ready for market.",
+    "WholesaleServiceTitle": "Fresh Ginger for Local Buyers",
+    "WholesaleServiceDescription": "Berry Trada supplies fresh, high-quality ginger to local markets at wholesale prices. We guarantee that our ginger is always fresh and of the best quality, perfect for your needs.",
+    "TubersServiceTitle": "Tubers Washing Service",
+    "TubersServiceDescription": "Our tubers washing service ensures your tubers are clean and ready for sale. We use effective cleaning methods to remove dirt and impurities, keeping the tubers in great condition.",
+    "GingerCollectServiceTitle": "Ginger Dealer",
+    "GingerCollectServiceDescription": "As a reliable ginger dealer, Berry Trada collects high-quality ginger directly from farmers. We ensure fair prices and support for farmers, bringing the best ginger to the market.",
+    "GingerPlantingServiceTitle": "Ginger Planting Partnership",
+    "GingerPlantingServiceDescription": "Partner with Berry Trada to grow ginger on your land. We provide the know-how and support needed to grow high-quality ginger, ensuring a good harvest and benefits for everyone involved."
   }
 }

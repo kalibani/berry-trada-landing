@@ -35,8 +35,8 @@ export default async function Home() {
       <Hero />
       <Features />
       <About />
-      <Team />
       <Portfolio />
+      <Team />
       <Testimonials />
       <Brands />
       <Pricing />

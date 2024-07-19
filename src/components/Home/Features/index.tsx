@@ -12,7 +12,7 @@ export default function Features() {
         {/* <!-- Section Title --> */}
         <SectionTitle
           mainTitle={t("services")}
-          title={t("title")}
+          title={t("tagline")}
           paragraph={t("paragraph")}
         />
 

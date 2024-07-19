@@ -19,7 +19,19 @@
   },
   "Services": {
     "services": "Layanan",
-    "title": "Memodernisasi Pengolahan Jahe",
-    "paragraph": "Teknik pengolahan modern kami memastikan setiap potongan jahe yang kami tangani tetap segar, beraroma, dan bernutrisi alami. Menggunakan sistem pencucian dan pengemasan canggih yang meminimalkan kerusakan dan memaksimalkan masa simpan, kami menetapkan standar baru dalam industri ini."
+    "tagline": "Memodernisasi Pengolahan Jahe",
+    "paragraph": "Teknik pengolahan modern kami memastikan setiap rimpang jahe yang kami tangani tetap segar, beraroma, dan bernutrisi alami. Menggunakan sistem pencucian dan pengemasan canggih yang meminimalkan kerusakan dan memaksimalkan masa simpan, kami menetapkan standar baru dalam industri ini.",
+    "ExportServiceTitle": "Ekspor Jahe",
+    "ExportServiceDescription": "Berry Trada menawarkan jahe terbaik dari Indonesia untuk ekspor. Kami memastikan setiap pengiriman selalu segar dan berkualitas tinggi, menjadikan kami pilihan utama bagi importir.",
+    "WashingServiceTitle": "Jasa Pencucian Jahe",
+    "WashingServiceDescription": "Layanan pencucian jahe kami menggunakan mesin canggih untuk membersihkan jahe Anda secara menyeluruh. Kami memastikan jahe Anda bebas dari kotoran, segar, dan siap untuk dipasarkan.",
+    "WholesaleServiceTitle": "Jahe Segar untuk Pembeli Lokal",
+    "WholesaleServiceDescription": "Berry Trada memasok jahe segar dan berkualitas tinggi ke pasar lokal dengan harga grosir. Kami menjamin jahe kami selalu segar dan berkualitas terbaik, sempurna untuk kebutuhan Anda.",
+    "TubersServiceTitle": "Jasa Pencucian Umbi-Umbian",
+    "TubersServiceDescription": "Layanan pencucian umbi kami memastikan umbi Anda bersih dan siap dijual. Kami menggunakan metode pembersihan yang efektif untuk menghilangkan kotoran dan kotoran, menjaga umbi dalam kondisi prima.",
+    "GingerCollectServiceTitle": "Pengumpul Jahe",
+    "GingerCollectServiceDescription": "Sebagai pedagang jahe yang andal, Berry Trada menerima Jahe dengan kuota tidak terbatas. Kami memastikan harga yang adil dan dukungan untuk petani, membawa jahe terbaik ke pasar.",
+    "GingerPlantingServiceTitle": "Kemitraan Penanaman Jahe",
+    "GingerPlantingServiceDescription": "Bermitra dengan Berry Trada untuk menanam jahe di lahan Anda. Kami menyediakan bibit, pengetahuan dan dukungan yang dibutuhkan untuk menanam jahe berkualitas tinggi, memastikan panen yang baik dan manfaat bagi semua pihak yang terlibat."
   }
 }
