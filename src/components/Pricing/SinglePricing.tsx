@@ -2,6 +2,7 @@
 
 import axios from "axios";
 import SingleOffer from "./SingleOffer";
+import { useTranslations } from "next-intl";
 
 export default function SinglePricing({ price }: any) {
   const handleSubscription = async (e: any) => {
@@ -20,67 +21,120 @@ export default function SinglePricing({ price }: any) {
     window.location.assign(data);
   };
 
+  const t = useTranslations("Pricing");
+
   return (
     <div
       className={`w-full sm:w-1/2 lg:w-1/3 ${price?.nickname === "Professional" ? "dark:border-[#2E333D] sm:border-l lg:border-x" : ""}`}
     >
       <div className="pb-20 pt-10 text-center">
-        <div className="border-b dark:border-[#2E333D]">
+        <div className="">
           <h3 className="mb-2 font-heading text-3xl font-medium text-dark dark:text-white">
-            {price?.nickname}
+            {t(price?.nickname)}
           </h3>
-          <p className="pb-10 text-base text-dark-text">{price?.subtitle}</p>
+          <p className="pb-6 text-base text-dark-text">{t(price?.subtitle)}</p>
         </div>
-        <div className="border-b py-10 dark:border-[#2E333D]">
+        <div className="border-b pb-10 dark:border-[#2E333D]">
           <h3 className="mb-6 flex items-end justify-center pt-2 font-heading text-base font-medium text-dark dark:text-white">
-            ${" "}
+            <span className="text-lg">
+              {price?.nickname === "nickNameExport" ||
+              price?.nickname === "nickNameExport2" ||
+              price?.nickname === "nickNameExport3"
+                ? "$"
+                : "Rp"}{" "}
+            </span>
             <sup className="-mb-2 text-[55px]">
               {" "}
-              {(price.unit_amount / 100).toLocaleString("en-US", {
-                currency: "USD",
+              {(price.unit_amount / 100).toLocaleString("id-ID", {
+                currency: "IDR",
               })}{" "}
             </sup>
-            /month
+            /KG
           </h3>
 
-          <p className="mx-auto max-w-[300px] text-base text-dark-text">
-            Lorem ipsum dolor sit ametion consectetur adipisc elit.
-          </p>
+          {/* <p className="mx-auto max-w-[300px] text-base text-dark-text">
+            {t(price?.description)}
+          </p> */}
         </div>
         <div className="space-y-4 px-6 pb-[60px] pt-10 text-left sm:px-10 md:px-8 lg:px-10 xl:px-20">
-          {price?.nickname === "Starter" && (
+          {price?.nickname === "nickNameExport" && (
             <>
-              <SingleOffer text="100 GB Storage" status="active" />
-              <SingleOffer text="1 TB Photos and Videos" status="active" />
-              <SingleOffer text="Exclusive Support" status="active" />
-              <SingleOffer text="Free SEO Tools" status="inactive" />
-              <SingleOffer text="Custom Branding Strategy" status="inactive" />
+              <SingleOffer text={t("age")} status="active" />
+              <SingleOffer text={t("size")} status="active" />
+              <SingleOffer text={t("wash")} status="active" />
+              <SingleOffer text={t("postHarvest")} status="active" />
+              <SingleOffer text={t("ozonation")} status="active" />
+              <SingleOffer text={t("coating")} status="active" />
+              <SingleOffer text={t("packing")} status="active" />
+              <SingleOffer text={t("guaranteed")} status="active" />
             </>
           )}
-          {price?.nickname === "Professional" && (
+          {price?.nickname === "nickNameExport2" && (
             <>
-              <SingleOffer text="500 GB Storage" status="active" />
-              <SingleOffer text="Unlimited Photos and Videos" status="active" />
-              <SingleOffer text="Exclusive Support" status="active" />
-              <SingleOffer text="Free SEO Tools" status="active" />
-              <SingleOffer text="Custom Branding Strategy" status="inactive" />
+              <SingleOffer text={t("age")} status="active" />
+              <SingleOffer text={t("size")} status="active" />
+              <SingleOffer text={t("wash")} status="active" />
+              <SingleOffer text={t("postHarvest")} status="active" />
+              <SingleOffer text={t("ozonation")} status="active" />
+              <SingleOffer text={t("coating")} status="active" />
+              <SingleOffer text={t("packing")} status="active" />
+              <SingleOffer text={t("guaranteed")} status="active" />
             </>
           )}
-          {price?.nickname === "Business" && (
+          {price?.nickname === "nickNameExport3" && (
             <>
-              <SingleOffer text="Unlimited Storage" status="active" />
-              <SingleOffer text="Unlimited Photos and Videos" status="active" />
-              <SingleOffer text="Exclusive Support" status="active" />
-              <SingleOffer text="Free SEO Tools" status="active" />
-              <SingleOffer text="Custom Branding Strategy" status="active" />
+              <SingleOffer text={t("age")} status="active" />
+              <SingleOffer text={t("size")} status="active" />
+              <SingleOffer text={t("wash")} status="active" />
+              <SingleOffer text={t("postHarvest")} status="active" />
+              <SingleOffer text={t("ozonation")} status="active" />
+              <SingleOffer text={t("coating")} status="active" />
+              <SingleOffer text={t("packing")} status="active" />
+              <SingleOffer text={t("guaranteed")} status="active" />
+            </>
+          )}
+          {price?.nickname === "nickNameWashing" && (
+            <>
+              <SingleOffer text="Menggunakan Mesin Canggih" status="active" />
+              <SingleOffer text="Packing Waring" status="active" />
+              <SingleOffer text="Sampai Di Atas Kontener" status="active" />
+              <SingleOffer text="Teknologi Pasca Panen" status="active" />
+              <SingleOffer text="Ozonisasi" status="active" />
+              <SingleOffer text="Edible Coating" status="inactive" />
+              <SingleOffer text="Bergaransi" status="inactive" />
+              <SingleOffer text="Sudah Termasuk Jahe" status="inactive" />
+            </>
+          )}
+          {price?.nickname === "nickNameWashingPremium" && (
+            <>
+              <SingleOffer text="Menggunakan Mesin Canggih" status="active" />
+              <SingleOffer text="Packing Waring" status="active" />
+              <SingleOffer text="Sampai Di Atas Kontener" status="active" />
+              <SingleOffer text="Teknologi Pasca Panen" status="active" />
+              <SingleOffer text="Ozonisasi" status="active" />
+              <SingleOffer text="Edible Coating" status="active" />
+              <SingleOffer text="Bergaransi" status="active" />
+              <SingleOffer text="Sudah Termasuk Jahe" status="inactive" />
+            </>
+          )}
+          {price?.nickname === "nickNameWashingComplete" && (
+            <>
+              <SingleOffer text="Menggunakan Mesin Canggih" status="active" />
+              <SingleOffer text="Packing Waring" status="active" />
+              <SingleOffer text="Sampai Di Atas Kontener" status="active" />
+              <SingleOffer text="Teknologi Pasca Panen" status="active" />
+              <SingleOffer text="Ozonisasi" status="active" />
+              <SingleOffer text="Edible Coating" status="active" />
+              <SingleOffer text="Bergaransi" status="active" />
+              <SingleOffer text="Sudah Termasuk Jahe" status="active" />
             </>
           )}
         </div>
         <button
           onClick={handleSubscription}
-          className={`inline-flex items-center rounded px-8 py-[14px] font-heading text-base text-white duration-200 ${price?.nickname === "Professional" ? "bg-primary hover:bg-primary/90" : "bg-dark hover:bg-dark/90"}`}
+          className={`inline-flex items-center rounded bg-primary px-8 py-[14px] font-heading text-base text-white duration-200 hover:bg-primary/90`}
         >
-          Join This Plan
+          {t("ContactUs")}
           <span className="pl-3">
             <svg
               width="16"

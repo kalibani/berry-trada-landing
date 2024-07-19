@@ -23,11 +23,11 @@ export const servicesData: Feature[] = [
     description: "WashingServiceDescription",
     icon: (
       <Image
-        src="/images/services/image-3.webp"
+        src="/images/hero/image-4.webp"
         alt="hero-image"
-        width={100}
-        height={100}
-        className=" rounded-full"
+        width={160}
+        height={120}
+        className="rounded-full"
       />
     ),
   },
@@ -37,10 +37,10 @@ export const servicesData: Feature[] = [
     description: "WholesaleServiceDescription",
     icon: (
       <Image
-        src="/images/services/image-5.webp"
+        src="/images/hero/image-4.webp"
         alt="hero-image"
-        width={100}
-        height={100}
+        width={160}
+        height={120}
         className="rounded-full"
       />
     ),
@@ -50,13 +50,13 @@ export const servicesData: Feature[] = [
     title: "TubersServiceTitle",
     description: "TubersServiceDescription",
     icon: (
-      <svg width="44" height="44" viewBox="0 0 44 44" className="fill-current">
-        <path d="M22 3.66663C32.1255 3.66663 40.3333 11.8745 40.3333 22C40.3333 32.1255 32.1255 40.3333 22 40.3333C11.8745 40.3333 3.66663 32.1255 3.66663 22C3.66663 11.8745 11.8745 3.66663 22 3.66663ZM22 7.33329C13.9003 7.33329 7.33329 13.9003 7.33329 22C7.33329 30.0996 13.9003 36.6666 22 36.6666C30.0996 36.6666 36.6666 30.0996 36.6666 22C36.6666 13.9003 30.0996 7.33329 22 7.33329ZM29.777 11.6288L32.3711 14.2211L25.5438 21.0521C25.6245 21.3546 25.6666 21.6718 25.6666 22C25.6666 24.0258 24.0258 25.6666 22 25.6666C19.9741 25.6666 18.3333 24.0258 18.3333 22C18.3333 19.9741 19.9741 18.3333 22 18.3333C22.3281 18.3333 22.6453 18.3755 22.9478 18.4561L29.7788 11.6288H29.777Z" />
-        <path
-          opacity="0.5"
-          d="M22 9.16663C23.8663 9.16663 25.6391 9.56446 27.2396 10.2813L24.3741 13.145C23.617 12.9433 22.8213 12.8333 22 12.8333C16.9381 12.8333 12.8333 16.9381 12.8333 22C12.8333 24.53 13.86 26.8216 15.5173 28.4826L12.925 31.075L12.639 30.7798C10.4866 28.4845 9.16663 25.3953 9.16663 22C9.16663 14.9123 14.9123 9.16663 22 9.16663ZM33.7186 16.7621C34.4336 18.3608 34.8333 20.1355 34.8333 22C34.8333 25.5438 33.396 28.7521 31.075 31.075L28.4826 28.4826C30.14 26.8216 31.1666 24.53 31.1666 22C31.1666 21.1786 31.0585 20.383 30.855 19.6258L33.7186 16.7621Z"
-        />
-      </svg>
+      <Image
+        src="/images/hero/image-4.webp"
+        alt="hero-image"
+        width={160}
+        height={120}
+        className="rounded-full"
+      />
     ),
   },
   {
@@ -64,13 +64,13 @@ export const servicesData: Feature[] = [
     title: "GingerCollectServiceTitle",
     description: "GingerCollectServiceDescription",
     icon: (
-      <svg width="44" height="44" viewBox="0 0 44 44" className="fill-current">
-        <path d="M25.6667 38.5H7.33333C6.8471 38.5 6.38079 38.3068 6.03697 37.963C5.69315 37.6192 5.5 37.1529 5.5 36.6667V18.3333H25.6667V38.5ZM38.5 14.6667H5.5V7.33333C5.5 6.8471 5.69315 6.38079 6.03697 6.03697C6.38079 5.69315 6.8471 5.5 7.33333 5.5H36.6667C37.1529 5.5 37.6192 5.69315 37.963 6.03697C38.3068 6.38079 38.5 6.8471 38.5 7.33333V14.6667Z" />
-        <path
-          opacity="0.5"
-          d="M29.3334 38.5V18.3334H38.5V36.6667C38.5 37.1529 38.3069 37.6193 37.9631 37.9631C37.6193 38.3069 37.1529 38.5 36.6667 38.5H29.3334Z"
-        />
-      </svg>
+      <Image
+        src="/images/hero/image-4.webp"
+        alt="hero-image"
+        width={160}
+        height={120}
+        className="rounded-full"
+      />
     ),
   },
   {
@@ -78,13 +78,13 @@ export const servicesData: Feature[] = [
     title: "GingerPlantingServiceTitle",
     description: "GingerPlantingServiceDescription",
     icon: (
-      <svg width="44" height="44" viewBox="0 0 44 44" className="fill-current">
-        <path
-          opacity="0.5"
-          d="M10.0154 8.12714C13.3421 5.24452 17.598 3.6605 21.9999 3.66664C32.1254 3.66664 40.3332 11.8745 40.3332 22C40.3332 25.916 39.1049 29.546 37.0149 32.5233L31.1665 22H36.6665C36.6668 19.1246 35.8218 16.3126 34.2368 13.9136C32.6517 11.5146 30.3964 9.63443 27.7514 8.50687C25.1063 7.37931 22.1882 7.0541 19.3598 7.57168C16.5314 8.08926 13.9175 9.42679 11.8432 11.418L10.0154 8.12714Z"
-        />
-        <path d="M33.9843 35.8729C30.6576 38.7555 26.4017 40.3395 21.9998 40.3333C11.8743 40.3333 3.6665 32.1255 3.6665 22C3.6665 18.084 4.89484 14.454 6.98484 11.4767L12.8332 22H7.33317C7.33293 24.8754 8.17788 27.6874 9.76295 30.0864C11.348 32.4854 13.6033 34.3656 16.2483 35.4931C18.8934 36.6207 21.8115 36.9459 24.6399 36.4283C27.4683 35.9107 30.0822 34.5732 32.1565 32.582L33.9843 35.8729Z" />
-      </svg>
+      <Image
+        src="/images/hero/image-4.webp"
+        alt="hero-image"
+        width={160}
+        height={120}
+        className="rounded-full"
+      />
     ),
   },
 ];

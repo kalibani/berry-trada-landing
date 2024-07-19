@@ -35,10 +35,10 @@ export default async function Home() {
       <Hero />
       <Features />
       <About />
-      <Portfolio />
       <Team />
-      <Testimonials />
+      <Portfolio />
       <Brands />
+      <Testimonials />
       <Pricing />
       {/* <HomeBlogSection /> */}
       <Support />

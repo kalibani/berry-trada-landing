@@ -7,7 +7,7 @@
     "ContactUs": "Hubungi Kami"
   },
   "Hero": {
-    "title": "Eksportir dan Pengolah Jahe Terkemuka",
+    "title": "Eksportir dan Pengolah Jahe Profesional",
     "tagline": "Mitra Terpercaya Anda dalam",
     "word1": "Ekspor Jahe",
     "word2": "Pemasok Jahe",
@@ -33,5 +33,39 @@
     "GingerCollectServiceDescription": "Sebagai pedagang jahe yang andal, Berry Trada menerima Jahe dengan kuota tidak terbatas. Kami memastikan harga yang adil dan dukungan untuk petani, membawa jahe terbaik ke pasar.",
     "GingerPlantingServiceTitle": "Kemitraan Penanaman Jahe",
     "GingerPlantingServiceDescription": "Bermitra dengan Berry Trada untuk menanam jahe di lahan Anda. Kami menyediakan bibit, pengetahuan dan dukungan yang dibutuhkan untuk menanam jahe berkualitas tinggi, memastikan panen yang baik dan manfaat bagi semua pihak yang terlibat."
+  },
+
+  "Pricing": {
+    "mainTitle": "HARGA",
+    "title": "Harga Terjangkau dengan Paket Sederhana",
+    "subtitle": "TEst",
+    "nickNameExport": "Jahe Gajah",
+    "subtitleExport": "Untuk Importir",
+    "descriptionExport": "Sempurna untuk importir yang ingin menawarkan produk terbaik kepada pelanggan mereka.",
+    "nickNameExport2": "Jahe Paris",
+    "subtitleExport2": "Untuk Importir",
+    "descriptionExport2": "Sempurna untuk importir yang ingin menawarkan produk terbaik kepada pelanggan mereka.",
+    "nickNameExport3": "Mix Paris & Gajah",
+    "subtitleExport3": "Untuk Importir",
+    "descriptionExport3": "Sempurna untuk importir yang ingin menawarkan produk terbaik kepada pelanggan mereka.",
+    "nickNameWashing": "Jasa Pencucian",
+    "subtitleWashing": "Untuk Eksportir",
+    "descriptionWashing": "Ideal untuk eksportir yang menginginkan solusi pembersihan cepat dan efisien.",
+    "nickNameWashingPremium": "Jasa Pencucian Premium",
+    "subtitleWashingPremium": "Untuk Eksportir",
+    "descriptionWashingPremium": "Termasuk pasca panen yang menyeluruh. Sempurna untuk eksportir yang berkomitmen pada kualitas.",
+    "nickNameWashingComplete": "Jasa Pencucian Lengkap",
+    "subtitleWashingComplete": "Untuk Eksportir",
+    "descriptionWashingComplete": "Termasuk pasca panen yang menyeluruh. Sempurna untuk eksportir yang berkomitmen pada kualitas.",
+    "age": "Jahe Tua",
+    "size": "100 Gram up",
+    "wash": "Cuci Bersih",
+    "postHarvest": "Teknologi Pasca Panen",
+    "ozonation": "Ozonisasi",
+    "coating": "Edible Coating",
+    "guaranteed": "Bergaransi",
+    "packing": "Packing Waring",
+    "priceAdjustment": "Harga dapat berubah sewaktu-waktu",
+    "ContactUs": "Hubungi Kami"
   }
 }

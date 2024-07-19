@@ -2,16 +2,14 @@ import Link from "next/link";
 import { pricingData } from "../../../stripe/pricingData";
 import SectionTitle from "../Common/SectionTitle";
 import SinglePricing from "./SinglePricing";
+import { useTranslations } from "next-intl";
 
 export default function Pricing() {
+  const t = useTranslations("Pricing");
   return (
     <section id="pricing" className="pt-14 sm:pt-20 lg:pt-[130px]">
       <div className="px-4 xl:container">
-        <SectionTitle
-          mainTitle="PRICING PLANS"
-          title="Affordable Pricing With Simple Plans"
-          paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus."
-        />
+        <SectionTitle mainTitle={t("mainTitle")} title={t("title")} />
 
         <div className="relative z-10 flex flex-wrap justify-center overflow-hidden rounded drop-shadow-light dark:drop-shadow-none">
           <div className="absolute left-0 top-0 -z-10 h-full w-full bg-noise-pattern bg-cover bg-center opacity-10 dark:opacity-40"></div>
@@ -72,6 +70,10 @@ export default function Pricing() {
             pricingData.map((price, key) => (
               <SinglePricing price={price} key={key} />
             ))}
+          <div className="mb-10 flex justify-start gap-1">
+            <span className="text-rose-600">*</span>
+            <p className="text-left text-gray-700">{t("priceAdjustment")}</p>
+          </div>
         </div>
 
         <div className="pt-12 text-center">
