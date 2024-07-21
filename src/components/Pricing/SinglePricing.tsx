@@ -25,7 +25,7 @@ export default function SinglePricing({ price }: any) {
 
   return (
     <div
-      className={`w-full sm:w-1/2 lg:w-1/3 ${price?.nickname === "Professional" ? "dark:border-[#2E333D] sm:border-l lg:border-x" : ""}`}
+      className={`mt-2 w-full sm:mt-6 sm:w-1/2 lg:w-1/3 ${price?.nickname === "Professional" ? "dark:border-[#2E333D] sm:border-l lg:border-x" : ""}`}
     >
       <div className="pb-20 pt-10 text-center">
         <div className="">
@@ -57,10 +57,63 @@ export default function SinglePricing({ price }: any) {
           </p> */}
         </div>
         <div className="space-y-4 px-6 pb-[60px] pt-10 text-left sm:px-10 md:px-8 lg:px-10 xl:px-20">
+          {price?.nickname === "nickNameWashing" && (
+            <>
+              <SingleOffer
+                text={t("minimumOrder", { minOrder: 25 })}
+                status="active"
+              />
+              <SingleOffer text={t("useMachine")} status="active" />
+              <SingleOffer text={t("packing")} status="active" />
+              <SingleOffer text={t("upToContainer")} status="active" />
+              <SingleOffer text={t("postHarvest")} status="active" />
+              <SingleOffer text={t("ozonation")} status="active" />
+              <SingleOffer text={t("coating")} status="inactive" />
+              <SingleOffer text={t("guaranteed")} status="inactive" />
+              <SingleOffer text={t("gingerIncluded")} status="inactive" />
+            </>
+          )}
+          {price?.nickname === "nickNameWashingPremium" && (
+            <>
+              <SingleOffer
+                text={t("minimumOrder", { minOrder: 15 })}
+                status="active"
+              />
+              <SingleOffer text={t("useMachine")} status="active" />
+              <SingleOffer text={t("packing")} status="active" />
+              <SingleOffer text={t("upToContainer")} status="active" />
+              <SingleOffer text={t("postHarvest")} status="active" />
+              <SingleOffer text={t("ozonation")} status="active" />
+              <SingleOffer text={t("coating")} status="active" />
+              <SingleOffer text={t("guaranteed")} status="active" />
+              <SingleOffer text={t("gingerIncluded")} status="inactive" />
+            </>
+          )}
+          {price?.nickname === "nickNameWashingComplete" && (
+            <>
+              <SingleOffer
+                text={t("minimumOrder", { minOrder: 25 })}
+                status="active"
+              />
+              <SingleOffer text={t("useMachine")} status="active" />
+              <SingleOffer text={t("packing")} status="active" />
+              <SingleOffer text={t("upToContainer")} status="active" />
+              <SingleOffer text={t("postHarvest")} status="active" />
+              <SingleOffer text={t("ozonation")} status="active" />
+              <SingleOffer text={t("coating")} status="active" />
+              <SingleOffer text={t("guaranteed")} status="active" />
+              <SingleOffer text={t("gingerIncluded")} status="active" />
+            </>
+          )}
           {price?.nickname === "nickNameExport" && (
             <>
               <SingleOffer text={t("age")} status="active" />
-              <SingleOffer text={t("size")} status="active" />
+              <SingleOffer
+                text={t("size", {
+                  size: 100,
+                })}
+                status="active"
+              />
               <SingleOffer text={t("wash")} status="active" />
               <SingleOffer text={t("postHarvest")} status="active" />
               <SingleOffer text={t("ozonation")} status="active" />
@@ -72,7 +125,12 @@ export default function SinglePricing({ price }: any) {
           {price?.nickname === "nickNameExport2" && (
             <>
               <SingleOffer text={t("age")} status="active" />
-              <SingleOffer text={t("size")} status="active" />
+              <SingleOffer
+                text={t("size", {
+                  size: 150,
+                })}
+                status="active"
+              />
               <SingleOffer text={t("wash")} status="active" />
               <SingleOffer text={t("postHarvest")} status="active" />
               <SingleOffer text={t("ozonation")} status="active" />
@@ -84,49 +142,18 @@ export default function SinglePricing({ price }: any) {
           {price?.nickname === "nickNameExport3" && (
             <>
               <SingleOffer text={t("age")} status="active" />
-              <SingleOffer text={t("size")} status="active" />
+              <SingleOffer
+                text={t("size", {
+                  size: 200,
+                })}
+                status="active"
+              />
               <SingleOffer text={t("wash")} status="active" />
               <SingleOffer text={t("postHarvest")} status="active" />
               <SingleOffer text={t("ozonation")} status="active" />
               <SingleOffer text={t("coating")} status="active" />
               <SingleOffer text={t("packing")} status="active" />
               <SingleOffer text={t("guaranteed")} status="active" />
-            </>
-          )}
-          {price?.nickname === "nickNameWashing" && (
-            <>
-              <SingleOffer text="Menggunakan Mesin Canggih" status="active" />
-              <SingleOffer text="Packing Waring" status="active" />
-              <SingleOffer text="Sampai Di Atas Kontener" status="active" />
-              <SingleOffer text="Teknologi Pasca Panen" status="active" />
-              <SingleOffer text="Ozonisasi" status="active" />
-              <SingleOffer text="Edible Coating" status="inactive" />
-              <SingleOffer text="Bergaransi" status="inactive" />
-              <SingleOffer text="Sudah Termasuk Jahe" status="inactive" />
-            </>
-          )}
-          {price?.nickname === "nickNameWashingPremium" && (
-            <>
-              <SingleOffer text="Menggunakan Mesin Canggih" status="active" />
-              <SingleOffer text="Packing Waring" status="active" />
-              <SingleOffer text="Sampai Di Atas Kontener" status="active" />
-              <SingleOffer text="Teknologi Pasca Panen" status="active" />
-              <SingleOffer text="Ozonisasi" status="active" />
-              <SingleOffer text="Edible Coating" status="active" />
-              <SingleOffer text="Bergaransi" status="active" />
-              <SingleOffer text="Sudah Termasuk Jahe" status="inactive" />
-            </>
-          )}
-          {price?.nickname === "nickNameWashingComplete" && (
-            <>
-              <SingleOffer text="Menggunakan Mesin Canggih" status="active" />
-              <SingleOffer text="Packing Waring" status="active" />
-              <SingleOffer text="Sampai Di Atas Kontener" status="active" />
-              <SingleOffer text="Teknologi Pasca Panen" status="active" />
-              <SingleOffer text="Ozonisasi" status="active" />
-              <SingleOffer text="Edible Coating" status="active" />
-              <SingleOffer text="Bergaransi" status="active" />
-              <SingleOffer text="Sudah Termasuk Jahe" status="active" />
             </>
           )}
         </div>

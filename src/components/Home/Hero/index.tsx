@@ -27,7 +27,7 @@ export default function Hero() {
               <h1 className="mb-5 font-heading text-2xl font-semibold dark:text-white sm:text-4xl md:text-[50px] md:leading-[60px]">
                 {t("tagline")} {language === "en" ? <br></br> : null}
                 <Typewriter
-                  words={[t("word1"), t("word2"), t("word3"), t("word4")]}
+                  words={[t("word1"), t("word4"), t("word2"), t("word3")]}
                   cursor
                   loop={0}
                   cursorStyle="|"
