@@ -53,11 +53,11 @@ export default function Footer() {
                     Toll Free Customer Care
                   </p>
                   <a
-                    href="tel:+(1) 123 456 7890"
+                    href="tel:+(62) 82126753060"
                     className="font-heading text-base text-dark hover:text-primary dark:text-white dark:hover:text-primary"
                   >
                     {" "}
-                    +(1) 123 456 7890{" "}
+                    +(62) 82126753060{" "}
                   </a>
                 </div>
                 <div>
@@ -65,11 +65,11 @@ export default function Footer() {
                     Need live support?
                   </p>
                   <a
-                    href="mailto:support@domain.com"
+                    href="mailto:contact@berrytrada.com"
                     className="font-heading text-base text-dark hover:text-primary dark:text-white dark:hover:text-primary"
                   >
                     {" "}
-                    support@domain.com{" "}
+                    contact@berrytrada.com{" "}
                   </a>
                 </div>
               </div>

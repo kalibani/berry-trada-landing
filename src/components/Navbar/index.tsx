@@ -194,7 +194,7 @@ export default function Navbar() {
             </div> */}
           </div>
 
-          <div className="z-580flex absolute right-5 top-1/2 -translate-y-1/2 items-center lg:static lg:ml-4 lg:translate-y-0 xl:ml-6">
+          <div className="absolute right-5 top-1/2 z-50 flex -translate-y-1/2 items-center lg:static lg:ml-4 lg:translate-y-0 xl:ml-6">
             <div className="flex items-center justify-end">
               <Select onValueChange={(lang) => setLanguage(lang)}>
                 <SelectTrigger className="w-[70px]">
@@ -213,7 +213,7 @@ export default function Navbar() {
 
             <button
               onClick={navigationHandler}
-              className="z-580flex relative h-10 w-10 items-center justify-center text-dark-text dark:text-white lg:hidden"
+              className="relative z-50 flex h-10 w-10 items-center justify-center text-dark-text dark:text-white lg:hidden"
             >
               {navigationOpen ? (
                 <svg

@@ -10,18 +10,24 @@ export const footerLinks: FooterLink[] = [
   },
   {
     id: uuid(),
-    title: "Products",
+    title: "Services",
     href: "/",
     external: false,
   },
+  // {
+  //   id: uuid(),
+  //   title: "Careers",
+  //   href: "/",
+  //   external: false,
+  //   badge: {
+  //     text: "Hiring",
+  //   },
+  // },
   {
     id: uuid(),
-    title: "Careers",
+    title: "About",
     href: "/",
     external: false,
-    badge: {
-      text: "Hiring",
-    },
   },
   {
     id: uuid(),
