@@ -15,12 +15,36 @@ import Team from "@/components/Team";
 import { Metadata } from "next";
 import NextIntlProvider from "../../../Providers/NextIntlProvider";
 
-const siteName = process.env.SITE_NAME;
-
 export const metadata: Metadata = {
-  title: `Next.js Starter for Business Sites | ${siteName}`,
+  title: "Berry Trada | Premium Ginger Exporter and Processor",
   description:
-    "Next.js starter for your next - Startup, Business, Agency or SaaS Website. Comes with refreshing design, integrations and everything you need to kickstart your next web project",
+    "Berry Trada is a leading exporter and processor of premium ginger, offering top-quality fresh ginger, advanced washing services, and comprehensive support for exporters. Rebuilding global trust in Indonesian ginger.",
+  keywords: [
+    "Premium ginger export",
+    "Ginger processing",
+    "Ginger washing service",
+    "Fresh ginger supplier",
+    "Indonesian ginger",
+    "Post-harvest technology",
+    "Export quality ginger",
+    "Ginger packing services",
+    "Ginger importers",
+    "High-quality ginger",
+    "Jasa cuci Jahe",
+    "Jasa pencucian jahe ekspor",
+    "jasa packing jahe",
+  ],
+  authors: {
+    name: "PT Berry Trada Multipersada",
+    url: "https://berrytrada.com",
+  },
+  openGraph: {
+    title: "Berry Trada | Premium Ginger Exporter and Processor",
+    description:
+      "Berry Trada is a leading exporter and processor of premium ginger, offering top-quality fresh ginger, advanced washing services, and comprehensive support for exporters. Rebuilding global trust in Indonesian ginger.",
+    type: "website",
+    url: "https://berrytrada.com",
+  },
 };
 
 export default async function Home() {

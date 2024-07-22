@@ -2,7 +2,7 @@
 
 import { navbarData } from "@/static-data/navbar";
 import { onScroll } from "@/utils/scrollActive";
-import { signOut, useSession } from "next-auth/react";
+import { useSession } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -91,7 +91,7 @@ export default function Navbar() {
           </div>
 
           <div
-            className={`menu-wrapper z-580h-screen fixed left-0 top-0 w-full justify-center bg-white p-5 dark:bg-dark lg:visible lg:static lg:flex lg:h-auto lg:justify-start lg:bg-transparent lg:p-0 lg:opacity-100 dark:lg:bg-transparent ${navigationOpen ? "show" : ""}`}
+            className={`menu-wrapper fixed left-0 top-0 z-50 h-screen w-full justify-center bg-white p-5 dark:bg-dark lg:visible lg:static lg:flex lg:h-auto lg:justify-start lg:bg-transparent lg:p-0 lg:opacity-100 dark:lg:bg-transparent ${navigationOpen ? "show" : ""}`}
           >
             <div className="w-full self-center">
               <nav>

@@ -127,7 +127,8 @@ export default function Support() {
               <div className="w-full px-4 md:w-1/2 lg:w-1/4">
                 <div className="mb-6 flex items-center space-x-5 lg:justify-end">
                   <a
-                    href="#"
+                    href="https://www.facebook.com/profile.php?id=61562533937261"
+                    target="_blank"
                     aria-label="social-link"
                     className="text-dark-text hover:text-primary dark:hover:text-white"
                   >
