@@ -34,7 +34,21 @@
     "GingerPlantingServiceTitle": "Kemitraan Penanaman Jahe",
     "GingerPlantingServiceDescription": "Bermitra dengan Berry Trada untuk menanam jahe di lahan Anda. Kami menyediakan bibit, pengetahuan dan dukungan yang dibutuhkan untuk menanam jahe berkualitas tinggi, memastikan panen yang baik dan manfaat bagi semua pihak yang terlibat."
   },
-
+  "About": {
+    "mainTitle": "TENTANG KAMI",
+    "title": "Ketahui detail tentang perusahaan kami",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.",
+    "taglineAbout": "Eksportir dan Penyedia Layanan Pencucian Jahe Profesional",
+    "descriptionAbout1": "Tahukah Anda bahwa 90% kiriman jahe Indonesia ke negara tujuan ekspor pada pertengahan tahun 2024 mengalami kebusukan? Selain karena usia jahe yang belum cukup umur hal ini disebabkan oleh cara pemrosesan yang buruk, cenderung konvensional dan tidak memiliki standar Quality Control yang ketat.",
+    "descriptionAbout2": "Di Berry Trada, kami berdedikasi untuk mengubah industri jahe melalui inovasi dan teknologi. Dengan fokus pada penerapan teknologi paska panen yang berkelanjutan memastikan bahwa kami mengirimkan jahe segar berkualitas tinggi yang memiliki masa simpan lebih panjang kepada klien kami di manapun.",
+    "descriptionAbout3": "Kami memiliki fokus bisnis pada ekspor jahe premium, menawarkan layanan pencucian dan pengepakan terbaik, serta memberikan dukungan komprehensif kepada eksportir lain.",
+    "taglineMission": "Merevolusi Pengolahan dan Ekspor Jahe",
+    "descriptionMission1": "Di Berry Trada, kami berkomitmen untuk mengubah cara jahe diproses dan diekspor. Misi kami adalah untuk meningkatkan kualitas dan keandalan jahe Indonesia melalui penerapan teknologi canggih dan metode perlakuan pasca panen yang mutakhir.",
+    "descriptionMission2": "Teknik pengolahan modern kami memastikan setiap potongan jahe yang kami tangani tetap segar, beraroma, dan bernutrisi alami. Kami menggunakan sistem pencucian dan pengemasan canggih yang meminimalkan kerusakan dan memaksimalkan masa simpan, menetapkan standar baru dalam industri ini.",
+    "descriptionMission3": "Dengan menggabungkan ilmu pengetahuan yang esensial dengan solusi inovatif, kami tidak hanya meningkatkan kualitas ekspor kami sendiri tetapi juga mendukung eksportir lokal lainnya dalam meningkatkan proses mereka. Tujuan kami adalah membangun kembali kepercayaan global terhadap jahe Indonesia, menjadikannya sinonim dengan kualitas premium dan standar luar biasa.",
+    "taglineVision": "Menetapkan Standar Keunggulan Jahe Global",
+    "descriptionVision": "Visi kami adalah menjadi nama terkemuka dalam industri jahe, diakui karena komitmen kami terhadap kualitas, inovasi, dan keberlanjutan. Kami membayangkan masa depan di mana"
+  },
   "Pricing": {
     "mainTitle": "HARGA",
     "title": "Harga Terjangkau dengan Paket Sederhana",
@@ -72,6 +86,24 @@
     "minimumOrder": "Minimum {minOrder} Ton",
     "useMachine": "Menggunakan Mesin canggih",
     "upToContainer": "Sampai Di Atas Kontener",
-    "gingerIncluded": "Sudah Termasuk Jahe"
+    "gingerIncluded": "Sudah Termasuk Jahe",
+    "bottomText": "Mencari solusi perusahaan?",
+    "bottomTextLink": "Hubungi tim kami untuk mendapatkan penawaran"
+  },
+  "support": {
+    "mainTitle": "BANTUAN",
+    "title": "Butuh bantuan? Hubungi kami",
+    "description": "Kami percaya dalam memberikan dukungan luar biasa kepada klien kami. Apakah Anda memiliki pertanyaan tentang layanan kami atau memerlukan bantuan terkait kebutuhan Anda, tim kami siap membantu Anda di setiap langkah.",
+    "email": "Alamat Email",
+    "phone": "Nomor Ponsel",
+    "address": "Lokasi Gudang",
+    "name": "Nama Anda",
+    "subject": "Judul",
+    "message": "Pesan",
+    "sendMessage": "Kirim Pesan"
+  },
+  "callToAction": {
+    "title": "Kolaborasi? Hubungi kami sekarang!",
+    "contactUs": "Hubungi kami"
   }
 }

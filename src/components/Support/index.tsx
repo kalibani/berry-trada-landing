@@ -1,4 +1,61 @@
+"use client";
+import { useState, useRef, LegacyRef, FormEvent } from "react";
+import { useTranslations } from "next-intl";
+import toast from "react-hot-toast";
+import emailjs from "@emailjs/browser";
+import { LoaderCircle } from "lucide-react";
+
 export default function Support() {
+  const [isLoading, setLoading] = useState(false);
+  const t = useTranslations("support");
+
+  const form = useRef<HTMLFormElement>(null);
+  const submitNotification = (error = "") => {
+    if (error) {
+      toast.error(`Failed to sent message: ${error}`, {
+        style: {
+          background: "#eb4034",
+          color: "#fff",
+          maxWidth: 500,
+        },
+      });
+    } else {
+      toast.success(`Successfully sent message`, {
+        style: {
+          background: "#04111d",
+          color: "#fff",
+        },
+      });
+    }
+  };
+
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
+    setLoading(true);
+    e.preventDefault();
+
+    const target = e.target as HTMLFormElement;
+
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID!,
+        form.current!,
+        process.env.NEXT_PUBLIC_KEY,
+      )
+      .then(
+        () => {
+          submitNotification();
+        },
+        (error) => {
+          submitNotification(error?.text);
+        },
+      )
+      .finally(() => {
+        target.reset();
+        setLoading(false);
+      });
+  };
+
   return (
     <section id="contact-us" className="pt-14 sm:pt-20 lg:pt-[130px]">
       <div className="px-4 xl:container">
@@ -9,18 +66,15 @@ export default function Support() {
                 <div className="relative mb-12 max-w-[500px] pt-6 md:mb-14 lg:pt-16">
                   <span className="title !left-0 !translate-x-0">
                     {" "}
-                    SUPPORT{" "}
+                    {t("mainTitle")}{" "}
                   </span>
                   <h2
                     id="contact-us"
                     className="mb-5 font-heading text-3xl font-semibold text-dark dark:text-white sm:text-4xl md:text-[50px] md:leading-[60px]"
                   >
-                    Need Any Help? Say hello
+                    {t("title")}
                   </h2>
-                  <p className="text-base text-dark-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    Donec vitae tortor aliquam ante.
-                  </p>
+                  <p className="text-base text-dark-text">{t("description")}</p>
                 </div>
               </div>
 
@@ -28,11 +82,11 @@ export default function Support() {
                 <div className="flex items-center">
                   <span className="mr-10 h-1 w-full max-w-[200px] bg-dark dark:bg-white"></span>
                   <a
-                    href="mailto:info@gostartup.com"
+                    href="mailto:contact@berrytrada.com"
                     className="font-heading text-xl text-dark dark:text-white md:text-3xl lg:text-xl xl:text-3xl"
                   >
                     {" "}
-                    info@gostartup.com{" "}
+                    contact@berrytrada.com{" "}
                   </a>
                 </div>
               </div>
@@ -42,30 +96,31 @@ export default function Support() {
               <div className="w-full px-4 md:w-1/2 lg:w-1/4">
                 <div className="mb-6">
                   <h3 className="mb-2 font-heading text-base text-dark dark:text-white sm:text-xl">
-                    Email Address
+                    {t("email")}
                   </h3>
                   <p className="text-base font-medium text-dark-text">
-                    support@startup.com
+                    contact@berrytrada.com
                   </p>
                 </div>
               </div>
               <div className="w-full px-4 md:w-1/2 lg:w-1/4">
                 <div className="mb-6">
                   <h3 className="mb-2 font-heading text-base text-dark dark:text-white sm:text-xl">
-                    Phone Number
+                    {t("phone")}
                   </h3>
                   <p className="text-base font-medium text-dark-text">
-                    +009 8754 3433 223
+                    +62 82126753060
                   </p>
                 </div>
               </div>
               <div className="w-full px-4 md:w-1/2 lg:w-1/4">
                 <div className="mb-6">
                   <h3 className="mb-2 font-heading text-base text-dark dark:text-white sm:text-xl">
-                    Office Location
+                    {t("address")}
                   </h3>
                   <p className="text-base font-medium text-dark-text">
-                    76/A, Green valle, Califonia USA.
+                    Jl Raya Cipatat RT/RW 01/13 KP. Andir Desa Cipatat,
+                    Kecamatan Cipatat, Kab Bandung Barat.
                   </p>
                 </div>
               </div>
@@ -142,8 +197,8 @@ export default function Support() {
         <div className="mx-auto max-w-[780px] pt-[130px]">
           <form
             className=""
-            action="https://formbold.com/s/unique_form_id"
-            method="POST"
+            ref={form as LegacyRef<HTMLFormElement>}
+            onSubmit={sendEmail}
           >
             <div className="-mx-4 flex flex-wrap">
               <div className="w-full px-4 sm:w-1/2">
@@ -153,13 +208,13 @@ export default function Support() {
                     className="mb-3 block font-heading text-base text-dark dark:text-white"
                   >
                     {" "}
-                    Your Name{" "}
+                    {t("name")}{" "}
                   </label>
                   <input
                     type="text"
                     name="name"
                     id="name"
-                    placeholder="Full Name"
+                    placeholder={t("name")}
                     className="w-full border-b bg-transparent py-5 text-base font-medium text-dark placeholder-dark-text outline-none focus:border-primary dark:border-[#2C3443] dark:text-white dark:focus:border-white"
                   />
                 </div>
@@ -171,13 +226,13 @@ export default function Support() {
                     className="mb-3 block font-heading text-base text-dark dark:text-white"
                   >
                     {" "}
-                    Email Address{" "}
+                    {t("email")}{" "}
                   </label>
                   <input
                     type="email"
                     name="email"
                     id="email"
-                    placeholder="Email Address"
+                    placeholder={t("email")}
                     className="w-full border-b bg-transparent py-5 text-base font-medium text-dark placeholder-dark-text outline-none focus:border-primary dark:border-[#2C3443] dark:text-white dark:focus:border-white"
                   />
                 </div>
@@ -189,13 +244,13 @@ export default function Support() {
                     className="mb-3 block font-heading text-base text-dark dark:text-white"
                   >
                     {" "}
-                    Phone (Optional){" "}
+                    {t("phone")} (Optional){" "}
                   </label>
                   <input
                     type="text"
                     name="phone"
                     id="phone"
-                    placeholder="Phone Number"
+                    placeholder={t("phone")}
                     className="w-full border-b bg-transparent py-5 text-base font-medium text-dark placeholder-dark-text outline-none focus:border-primary dark:border-[#2C3443] dark:text-white dark:focus:border-white"
                   />
                 </div>
@@ -207,13 +262,13 @@ export default function Support() {
                     className="mb-3 block font-heading text-base text-dark dark:text-white"
                   >
                     {" "}
-                    Subject{" "}
+                    {t("subject")}{" "}
                   </label>
                   <input
                     type="text"
                     name="subject"
                     id="subject"
-                    placeholder="Type Subject"
+                    placeholder={t("subject")}
                     className="w-full border-b bg-transparent py-5 text-base font-medium text-dark placeholder-dark-text outline-none focus:border-primary dark:border-[#2C3443] dark:text-white dark:focus:border-white"
                   />
                 </div>
@@ -225,19 +280,19 @@ export default function Support() {
                     className="mb-3 block font-heading text-base text-dark dark:text-white"
                   >
                     {" "}
-                    Message{" "}
+                    {t("message")}{" "}
                   </label>
                   <textarea
                     rows={4}
                     name="message"
                     id="message"
-                    placeholder="Type Message"
+                    placeholder={t("message")}
                     className="w-full resize-none border-b bg-transparent py-5 text-base font-medium text-dark placeholder-dark-text outline-none focus:border-primary dark:border-[#2C3443] dark:text-white dark:focus:border-white"
                   ></textarea>
                 </div>
               </div>
 
-              <div className="w-full px-4">
+              {/* <div className="w-full px-4">
                 <div className="mb-12">
                   <label
                     htmlFor="supportCheckbox"
@@ -270,11 +325,16 @@ export default function Support() {
                     Policy
                   </label>
                 </div>
-              </div>
+              </div> */}
 
               <div className="w-full px-4">
-                <button className="flex w-full items-center justify-center rounded bg-primary px-8 py-[14px] font-heading text-base text-white hover:bg-opacity-90">
-                  Send Message
+                <button
+                  type="submit"
+                  disabled={isLoading}
+                  className="flex w-full items-center justify-center gap-1 rounded bg-primary px-8 py-[14px] font-heading text-base text-white hover:bg-opacity-90"
+                >
+                  {t("sendMessage")}
+                  {isLoading ? <LoaderCircle className="animate-spin" /> : null}
                 </button>
               </div>
             </div>

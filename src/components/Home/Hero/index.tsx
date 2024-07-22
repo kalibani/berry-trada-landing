@@ -1,5 +1,6 @@
 "use client";
 
+import { useLink } from "@/hooks/useLink";
 import { useTranslate } from "@/hooks/useTranslate";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -9,6 +10,7 @@ import { Typewriter } from "react-simple-typewriter";
 export default function Hero() {
   const t = useTranslations("Hero");
   const { language } = useTranslate();
+  const { link } = useLink();
 
   return (
     <section
@@ -51,7 +53,8 @@ export default function Hero() {
               </p>
               <div className="flex flex-wrap items-center justify-center lg:justify-start">
                 <a
-                  href="#contact-us"
+                  href={link}
+                  target="_blank"
                   className="inline-flex items-center rounded bg-primary px-6 py-[10px] font-heading text-base text-white hover:bg-opacity-90 md:px-8 md:py-[14px]"
                 >
                   {t("ContactUs")}

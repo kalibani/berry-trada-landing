@@ -69,7 +69,7 @@ export default function Navbar() {
         className={`header absolute left-0 top-0 w-full ${stickyMenu ? "sticky-navbar" : ""}`}
       >
         <div className="flex w-full flex-wrap px-5 lg:flex-nowrap lg:items-center lg:px-5 xl:px-10 2xl:px-20">
-          <div className="relative z-[99] max-w-[250px] pr-4 lg:w-full lg:max-w-[220px] xl:max-w-[280px]">
+          <div className="relative z-[80] max-w-[250px] pr-4 lg:w-full lg:max-w-[220px] xl:max-w-[280px]">
             <Link href="/" className="inline-block">
               <Image
                 src="/images/Logo-uk-bebas/Transparan.png"
@@ -91,7 +91,7 @@ export default function Navbar() {
           </div>
 
           <div
-            className={`menu-wrapper fixed left-0 top-0 z-50 h-screen w-full justify-center bg-white p-5 dark:bg-dark lg:visible lg:static lg:flex lg:h-auto lg:justify-start lg:bg-transparent lg:p-0 lg:opacity-100 dark:lg:bg-transparent ${navigationOpen ? "show" : ""}`}
+            className={`menu-wrapper z-580h-screen fixed left-0 top-0 w-full justify-center bg-white p-5 dark:bg-dark lg:visible lg:static lg:flex lg:h-auto lg:justify-start lg:bg-transparent lg:p-0 lg:opacity-100 dark:lg:bg-transparent ${navigationOpen ? "show" : ""}`}
           >
             <div className="w-full self-center">
               <nav>
@@ -194,13 +194,13 @@ export default function Navbar() {
             </div> */}
           </div>
 
-          <div className="absolute right-5 top-1/2 z-50 flex -translate-y-1/2 items-center lg:static lg:ml-4 lg:translate-y-0 xl:ml-6">
+          <div className="z-580flex absolute right-5 top-1/2 -translate-y-1/2 items-center lg:static lg:ml-4 lg:translate-y-0 xl:ml-6">
             <div className="flex items-center justify-end">
               <Select onValueChange={(lang) => setLanguage(lang)}>
                 <SelectTrigger className="w-[70px]">
                   <SelectValue placeholder={language.toLocaleUpperCase()} />
                 </SelectTrigger>
-                <SelectContent>
+                <SelectContent className="z-[999]">
                   <SelectItem value="id">ID</SelectItem>
                   <SelectItem value="en">EN</SelectItem>
                 </SelectContent>
@@ -213,7 +213,7 @@ export default function Navbar() {
 
             <button
               onClick={navigationHandler}
-              className="relative z-50 flex h-10 w-10 items-center justify-center text-dark-text dark:text-white lg:hidden"
+              className="z-580flex relative h-10 w-10 items-center justify-center text-dark-text dark:text-white lg:hidden"
             >
               {navigationOpen ? (
                 <svg

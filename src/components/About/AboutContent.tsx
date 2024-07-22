@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { v4 as uuid } from "uuid";
 import TabPanel from "./TabPanel";
+import { useTranslations } from "next-intl";
 
 const tabButtons = [
   {
@@ -25,6 +26,8 @@ const tabButtons = [
 export default function AboutContent() {
   const [activeTab, setActiveTab] = useState<string>(tabButtons[0].value);
 
+  const t = useTranslations("About");
+
   return (
     <>
       <div className="tabButtons flex w-full items-center justify-around">
@@ -41,31 +44,25 @@ export default function AboutContent() {
       <div className="w-full">
         {activeTab === "about" && (
           <TabPanel
-            title="DB, Auth, Stripe, Sanity, and More"
+            title={t("taglineAbout")}
             image1="/images/about/image-1.jpg"
             image1Alt="about image 1"
             image2="/images/about/image-2.jpg"
             image2Alt="about image 2"
           >
             <p className="mb-6 text-base text-dark-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              condimentum sapien ac leo cursus dignissim. In ac lectus vel orci
-              accumsan ultricies at in libero accumsan.
+              {t("descriptionAbout1")}
             </p>
             <p className="mb-6 text-base text-dark-text">
-              Phasellus ex massa, facilisis ac vestibulum eget, ultrices quis
-              nulla. Integer vitae magna lacus. Sed venenatis auctor dolor.
+              {t("descriptionAbout2")}
             </p>
-            <p className="text-base text-dark-text">
-              Phasellus ex massa, facilisis ac vestibulum eget, ultrices quis
-              nulla. Integer vitae magna lacus. Sed venenatis auctor dolor.
-            </p>
+            <p className="text-base text-dark-text">{t("descriptionAbout3")}</p>
           </TabPanel>
         )}
 
         {activeTab === "mission" && (
           <TabPanel
-            title="Built-with Latest Tools and Technologies"
+            title={t("taglineMission")}
             image1="/images/about/image-1.jpg"
             image1Alt="about image 1"
             image2="/images/about/image-2.jpg"
@@ -73,41 +70,27 @@ export default function AboutContent() {
             leftContent
           >
             <p className="mb-6 text-base text-dark-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              condimentum sapien ac leo cursus dignissim. In ac lectus vel orci
-              accumsan ultricies at in libero accumsan.
+              {t("descriptionMission1")}
             </p>
             <p className="mb-6 text-base text-dark-text">
-              Phasellus ex massa, facilisis ac vestibulum eget, ultrices quis
-              nulla. Integer vitae magna lacus. Sed venenatis auctor dolor.
+              {t("descriptionMission2")}
             </p>
             <p className="text-base text-dark-text">
-              Phasellus ex massa, facilisis ac vestibulum eget, ultrices quis
-              nulla. Integer vitae magna lacus. Sed venenatis auctor dolor.
+              {t("descriptionMission3")}
             </p>
           </TabPanel>
         )}
 
         {activeTab === "vision" && (
           <TabPanel
-            title="High-quality Premium Design with Everything You Need"
+            title={t("taglineVision")}
             image1="/images/about/image-1.jpg"
             image1Alt="about image 1"
             image2="/images/about/image-2.jpg"
             image2Alt="about image 2"
           >
             <p className="mb-6 text-base text-dark-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              condimentum sapien ac leo cursus dignissim. In ac lectus vel orci
-              accumsan ultricies at in libero accumsan.
-            </p>
-            <p className="mb-6 text-base text-dark-text">
-              Phasellus ex massa, facilisis ac vestibulum eget, ultrices quis
-              nulla. Integer vitae magna lacus. Sed venenatis auctor dolor.
-            </p>
-            <p className="text-base text-dark-text">
-              Phasellus ex massa, facilisis ac vestibulum eget, ultrices quis
-              nulla. Integer vitae magna lacus. Sed venenatis auctor dolor.
+              {t("descriptionVision")}
             </p>
           </TabPanel>
         )}

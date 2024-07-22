@@ -1,27 +1,29 @@
 "use client";
 
-import axios from "axios";
+import { useLink } from "@/hooks/useLink";
+// import axios from "axios";
 import SingleOffer from "./SingleOffer";
 import { useTranslations } from "next-intl";
 
 export default function SinglePricing({ price }: any) {
-  const handleSubscription = async (e: any) => {
-    e.preventDefault();
-    const { data } = await axios.post(
-      "/api/payment",
-      {
-        priceId: price.id,
-      },
-      {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      },
-    );
-    window.location.assign(data);
-  };
+  // const handleSubscription = async (e: any) => {
+  //   e.preventDefault();
+  //   const { data } = await axios.post(
+  //     "/api/payment",
+  //     {
+  //       priceId: price.id,
+  //     },
+  //     {
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //     },
+  //   );
+  //   window.location.assign(data);
+  // };
 
   const t = useTranslations("Pricing");
+  const { link } = useLink();
 
   return (
     <div
@@ -157,8 +159,9 @@ export default function SinglePricing({ price }: any) {
             </>
           )}
         </div>
-        <button
-          onClick={handleSubscription}
+        <a
+          href={link}
+          target="_blank"
           className={`inline-flex items-center rounded bg-primary px-8 py-[14px] font-heading text-base text-white duration-200 hover:bg-primary/90`}
         >
           {t("ContactUs")}
@@ -176,7 +179,7 @@ export default function SinglePricing({ price }: any) {
               />
             </svg>
           </span>
-        </button>
+        </a>
       </div>
     </div>
   );

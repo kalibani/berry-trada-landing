@@ -34,6 +34,21 @@
     "GingerPlantingServiceTitle": "Ginger Planting Partnership",
     "GingerPlantingServiceDescription": "Partner with Berry Trada to grow ginger on your land. We provide the know-how and support needed to grow high-quality ginger, ensuring a good harvest and benefits for everyone involved."
   },
+  "About": {
+    "mainTitle": "TENTANG KAMI",
+    "title": "Ketahui detail tentang perusahaan kami",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.",
+    "taglineAbout": "Professional Ginger Exporter and Washing Service Provider",
+    "descriptionAbout1": "Did you know that 90% of Indonesian ginger shipments to export destinations in mid-2024 experienced spoilage? This is not only due to the young age of the ginger but as well as poor processing methods, which tend to be conventional and lack adequate quality control standards.",
+    "descriptionAbout2": "At Berry Trada, we are dedicated to transforming the ginger industry through innovation and technology. By focusing on sustainable post-harvest technology, we ensure that we deliver fresh, high-quality ginger with a longer shelf life to our clients, no matter where they are.",
+    "descriptionAbout3": "Our business focus is on exporting premium ginger, offering the best washing and packing services, and providing comprehensive support to other exporters.",
+    "taglineMission": "Revolutionizing Ginger Processing and Export",
+    "descriptionMission1": "At Berry Trada, we are committed to transforming the way ginger is processed and exported. Our mission is to elevate the quality and reliability of Indonesian ginger through the implementation of cutting-edge technologies and advanced post-harvest treatment methods.",
+    "descriptionMission2": " Our modern processing techniques ensure that every piece of ginger we handle retains its natural freshness, flavor, and nutritional value. We utilize state-of-the-art washing and packing systems that minimize damage and maximize shelf life, setting a new standard in the industry.",
+    "descriptionMission3": "By combining essential science with innovative solutions, we not only improve the quality of our own exports but also support other local exporters in enhancing their processes. Our goal is to rebuild the global trust in Indonesian ginger, making it synonymous with premium quality and exceptional standards.",
+    "taglineVision": "Setting the Standard for Global Ginger Excellence",
+    "descriptionVision": "To revolutionize the Indonesian ginger export industry by setting new standards of quality, efficiency, and trust, ensuring our ginger is recognized globally for its superior freshness and reliability."
+  },
   "Pricing": {
     "mainTitle": "PRICING",
     "title": "Affordable Pricing With Simple Plans",
@@ -71,6 +86,24 @@
     "minimumOrder": "Minimum {minOrder} Tons",
     "useMachine": "Use Advanced Machine",
     "upToContainer": "Up To Container",
-    "gingerIncluded": "Ginger Included"
+    "gingerIncluded": "Ginger Included",
+    "bottomText": "Looking for a company solution?",
+    "bottomTextLink": "Contact our team to get quote"
+  },
+  "support": {
+    "mainTitle": "SUPPORT",
+    "title": "Need Any Help? Say hello",
+    "description": "We believe in providing exceptional support to our clients. Whether you have questions about our services or need assistance with your requirements, our dedicated team is here to assist you every step of the way.",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "address": "Warehouse Location",
+    "name": "Your Name",
+    "subject": "Subject",
+    "message": "Message",
+    "sendMessage": "Send Message"
+  },
+  "callToAction": {
+    "title": "Looking for a collaboration? Contact Us Now!",
+    "contactUs": "Contact Us"
   }
 }

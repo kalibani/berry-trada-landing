@@ -154,13 +154,14 @@ export default function Pricing() {
 
         <div className="pt-12 text-center">
           <h3 className="mb-5 font-heading text-xl font-medium text-dark dark:text-white sm:text-3xl">
-            Looking for a company solution?
+            {t("bottomText")}
           </h3>
           <Link
-            href="/contact-us"
+            href="mailto:contact@berrytrada.com"
             className="text-base text-dark-text underline-offset-2 duration-200 hover:text-primary hover:underline"
+            target="_blank"
           >
-            Contact our team to get a quote.
+            {t("bottomTextLink")}
           </Link>
         </div>
       </div>

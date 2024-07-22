@@ -1,4 +1,11 @@
+"use client";
+import { useTranslations } from "next-intl";
+import { useLink } from "@/hooks/useLink";
+
 export default function CallToAction() {
+  const t = useTranslations("callToAction");
+  const { link } = useLink();
+
   return (
     <section id="cta" className="pt-14 sm:pt-20 lg:pt-[130px]">
       <div className="px-4 xl:container">
@@ -62,21 +69,22 @@ export default function CallToAction() {
             <div className="w-full px-4 lg:w-2/3">
               <div className="mx-auto mb-10 max-w-[550px] text-center lg:mb-0 lg:ml-0 lg:text-left">
                 <h2 className="mb-4 font-heading text-xl font-semibold leading-tight text-dark dark:text-white sm:text-[38px]">
-                  Looking for a collaboration? Get Started Today!
+                  {t("title")}
                 </h2>
-                <p className="text-base text-dark-text">
+                {/* <p className="text-base text-dark-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
+                </p> */}
               </div>
             </div>
             <div className="w-full px-4 lg:w-1/3">
               <div className="text-center lg:text-right">
                 <a
-                  href="#"
+                  href={link}
+                  target="_blank"
                   className="inline-flex items-center rounded bg-primary px-8 py-[14px] font-heading text-base text-white hover:bg-opacity-90"
                 >
                   {" "}
-                  Get Started Now{" "}
+                  {t("contactUs")}{" "}
                 </a>
               </div>
             </div>
