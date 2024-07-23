@@ -5,25 +5,22 @@ export const testimonialData: Testimonial[] = [
   {
     id: uuid(),
     name: "Musharof Chy",
-    designation: "Founder @ Pimjo",
-    image: "/images/testimonial/image-1.jpg",
-    review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum sapien ac leo cursus dignissim. In ac lectus vel orci accumsan ultricies at in libero accumsan Lorem Ipsum has been the industry's standard",
+    designation: "Director @ Sa**n Enterprise",
+    image: "/images/testimonial/image-1.png",
+    review: "review1",
   },
   {
     id: uuid(),
     name: "Naimur Rahman",
-    designation: "Product Designer @ Pimjo",
-    image: "/images/testimonial/image-1.jpg",
-    review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum sapien ac leo cursus dignissim. In ac lectus vel orci accumsan ultricies at in libero accumsan Lorem Ipsum has been the industry's standard",
+    designation: "Director @ Si**r Ventures",
+    image: "/images/testimonial/image-2.png",
+    review: "review2",
   },
   {
     id: uuid(),
-    name: "Shafiq Hammad",
-    designation: "Frontend Developer @ Pimjo",
-    image: "/images/testimonial/image-1.jpg",
-    review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum sapien ac leo cursus dignissim. In ac lectus vel orci accumsan ultricies at in libero accumsan Lorem Ipsum has been the industry's standard",
+    name: "Irwan Riandi",
+    designation: "Director @ PT Agriculture Indonesia",
+    image: "/images/testimonial/image-5.webp",
+    review: "review3",
   },
 ];

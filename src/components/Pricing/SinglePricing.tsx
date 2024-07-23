@@ -66,6 +66,7 @@ export default function SinglePricing({ price }: any) {
                 status="active"
               />
               <SingleOffer text={t("useMachine")} status="active" />
+              <SingleOffer text={t("capacity")} status="active" />
               <SingleOffer text={t("packing")} status="active" />
               <SingleOffer text={t("upToContainer")} status="active" />
               <SingleOffer text={t("postHarvest")} status="active" />
@@ -82,6 +83,7 @@ export default function SinglePricing({ price }: any) {
                 status="active"
               />
               <SingleOffer text={t("useMachine")} status="active" />
+              <SingleOffer text={t("capacity")} status="active" />
               <SingleOffer text={t("packing")} status="active" />
               <SingleOffer text={t("upToContainer")} status="active" />
               <SingleOffer text={t("postHarvest")} status="active" />
@@ -98,6 +100,7 @@ export default function SinglePricing({ price }: any) {
                 status="active"
               />
               <SingleOffer text={t("useMachine")} status="active" />
+              <SingleOffer text={t("capacity")} status="active" />
               <SingleOffer text={t("packing")} status="active" />
               <SingleOffer text={t("upToContainer")} status="active" />
               <SingleOffer text={t("postHarvest")} status="active" />

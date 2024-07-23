@@ -2,7 +2,7 @@
 
 import { navbarData } from "@/static-data/navbar";
 import { onScroll } from "@/utils/scrollActive";
-import { useSession } from "next-auth/react";
+// import { useSession } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -26,7 +26,7 @@ export default function Navbar() {
   const [stickyMenu, setStickyMenu] = useState(false);
   const [searchModalOpen, setSearchModalOpen] = useState(false);
 
-  const { data: session } = useSession();
+  // const { data: session } = useSession();
 
   const { language, setLanguage } = useTranslate();
 
@@ -69,7 +69,7 @@ export default function Navbar() {
         className={`header absolute left-0 top-0 w-full ${stickyMenu ? "sticky-navbar" : ""}`}
       >
         <div className="flex w-full flex-wrap px-5 lg:flex-nowrap lg:items-center lg:px-5 xl:px-10 2xl:px-20">
-          <div className="relative z-[80] max-w-[250px] pr-4 lg:w-full lg:max-w-[220px] xl:max-w-[280px]">
+          <div className="relative z-[80] max-w-[220px] pr-4 lg:w-full lg:max-w-[220px] xl:max-w-[280px]">
             <Link href="/" className="inline-block">
               <Image
                 src="/images/Logo-uk-bebas/Transparan.png"

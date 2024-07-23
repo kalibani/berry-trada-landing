@@ -1,5 +1,6 @@
 "use client";
 import axios from "axios";
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 import toast from "react-hot-toast";
 
@@ -30,13 +31,15 @@ export default function FooterNewsletter() {
     }
   };
 
+  const t = useTranslations("footer");
+
   return (
     <div className="mb-20">
       <h3 className="mb-9 font-heading text-2xl font-medium text-dark dark:text-white">
-        Newsletter
+        {t("newsLetter")}
       </h3>
       <p className="mb-6 font-heading text-base text-dark-text">
-        Subscribe to receive future updates
+        {t("subscribe")}
       </p>
       <form onSubmit={handleSubmit} className="relative">
         <input

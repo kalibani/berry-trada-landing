@@ -4,13 +4,13 @@ import { v4 as uuid } from "uuid";
 export const footerLinks: FooterLink[] = [
   {
     id: uuid(),
-    title: "Home",
+    title: "home",
     href: "/",
     external: false,
   },
   {
     id: uuid(),
-    title: "Services",
+    title: "services",
     href: "/",
     external: false,
   },
@@ -25,13 +25,13 @@ export const footerLinks: FooterLink[] = [
   // },
   {
     id: uuid(),
-    title: "About",
+    title: "about",
     href: "/",
     external: false,
   },
   {
     id: uuid(),
-    title: "Pricing",
+    title: "pricing",
     href: "/",
     external: false,
   },
@@ -40,25 +40,25 @@ export const footerLinks: FooterLink[] = [
 export const footerLinksTwo: FooterLink[] = [
   {
     id: uuid(),
-    title: "Company",
+    title: "company",
     href: "/",
     external: false,
   },
   {
     id: uuid(),
-    title: "Press Media",
+    title: "pressMedia",
     href: "/",
     external: false,
   },
   {
     id: uuid(),
-    title: "Our Blog",
+    title: "ourBlog",
     href: "/blog",
     external: false,
   },
   {
     id: uuid(),
-    title: "Contact Us",
+    title: "contactUs",
     href: "/contact",
     external: false,
   },

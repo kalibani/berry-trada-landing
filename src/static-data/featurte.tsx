@@ -9,11 +9,11 @@ export const servicesData: Feature[] = [
     description: "ExportServiceDescription",
     icon: (
       <Image
-        src="/images/hero/image-4.webp"
+        src="/images/services/image-6.png"
         alt="hero-image"
         width={160}
         height={120}
-        className="rounded-full"
+        className="h-full rounded-full"
       />
     ),
   },
@@ -23,11 +23,11 @@ export const servicesData: Feature[] = [
     description: "WashingServiceDescription",
     icon: (
       <Image
-        src="/images/hero/image-4.webp"
+        src="/images/services/image-1.webp"
         alt="hero-image"
         width={160}
         height={120}
-        className="rounded-full"
+        className="h-full rounded-full"
       />
     ),
   },
@@ -37,11 +37,11 @@ export const servicesData: Feature[] = [
     description: "WholesaleServiceDescription",
     icon: (
       <Image
-        src="/images/hero/image-4.webp"
+        src="/images/services/image-5.webp"
         alt="hero-image"
         width={160}
         height={120}
-        className="rounded-full"
+        className="h-full rounded-full"
       />
     ),
   },
@@ -51,11 +51,11 @@ export const servicesData: Feature[] = [
     description: "TubersServiceDescription",
     icon: (
       <Image
-        src="/images/hero/image-4.webp"
+        src="/images/services/image-3.webp"
         alt="hero-image"
         width={160}
         height={120}
-        className="rounded-full"
+        className="h-full rounded-full"
       />
     ),
   },
@@ -65,11 +65,11 @@ export const servicesData: Feature[] = [
     description: "GingerCollectServiceDescription",
     icon: (
       <Image
-        src="/images/hero/image-4.webp"
+        src="/images/services/image-4.webp"
         alt="hero-image"
         width={160}
         height={120}
-        className="rounded-full"
+        className="h-full rounded-full"
       />
     ),
   },
@@ -79,11 +79,11 @@ export const servicesData: Feature[] = [
     description: "GingerPlantingServiceDescription",
     icon: (
       <Image
-        src="/images/hero/image-4.webp"
+        src="/images/services/image-7.jpg"
         alt="hero-image"
         width={160}
         height={120}
-        className="rounded-full"
+        className="h-full rounded-full"
       />
     ),
   },

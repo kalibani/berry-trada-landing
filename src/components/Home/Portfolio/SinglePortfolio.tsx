@@ -20,7 +20,7 @@ export default function SinglePortfolio({
           />
         </div>
 
-        <div className="absolute bottom-8 left-5 flex translate-y-8 items-center justify-between rounded bg-[#000] bg-opacity-30 px-4 py-5 opacity-0 backdrop-blur-[30px] transition duration-300 group-hover:translate-y-0 group-hover:opacity-100 sm:left-8 sm:px-6 lg:left-5 lg:px-4 xl:px-6 2xl:left-8">
+        {/* <div className="absolute bottom-8 left-5 flex translate-y-8 items-center justify-between rounded bg-[#000] bg-opacity-30 px-4 py-5 opacity-0 backdrop-blur-[30px] transition duration-300 group-hover:translate-y-0 group-hover:opacity-100 sm:left-8 sm:px-6 lg:left-5 lg:px-4 xl:px-6 2xl:left-8">
           <div className="border-r border-[#e9e9e9] border-opacity-30 pr-4 sm:pr-5 lg:pr-4 xl:pr-5">
             <h3 className="font-heading text-base font-medium text-white sm:text-xl lg:text-base xl:text-xl">
               {portfolio?.title}
@@ -44,7 +44,7 @@ export default function SinglePortfolio({
               </svg>
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

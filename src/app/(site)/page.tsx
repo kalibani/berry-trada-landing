@@ -1,4 +1,4 @@
-import { getLocale, getMessages } from "next-intl/server";
+import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import About from "@/components/About";
 import HomeBlogSection from "@/components/Blog/HomeBlogSection";
 import Brands from "@/components/Brands";
@@ -12,40 +12,40 @@ import Navbar from "@/components/Navbar";
 import Pricing from "@/components/Pricing";
 import Support from "@/components/Support";
 import Team from "@/components/Team";
-import { Metadata } from "next";
 import NextIntlProvider from "../../../Providers/NextIntlProvider";
 
-export const metadata: Metadata = {
-  title: "Berry Trada | Premium Ginger Exporter and Processor",
-  description:
-    "Berry Trada is a leading exporter and processor of premium ginger, offering top-quality fresh ginger, advanced washing services, and comprehensive support for exporters. Rebuilding global trust in Indonesian ginger.",
-  keywords: [
-    "Premium ginger export",
-    "Ginger processing",
-    "Ginger washing service",
-    "Fresh ginger supplier",
-    "Indonesian ginger",
-    "Post-harvest technology",
-    "Export quality ginger",
-    "Ginger packing services",
-    "Ginger importers",
-    "High-quality ginger",
-    "Jasa cuci Jahe",
-    "Jasa pencucian jahe ekspor",
-    "jasa packing jahe",
-  ],
-  authors: {
-    name: "PT Berry Trada Multipersada",
-    url: "https://berrytrada.com",
-  },
-  openGraph: {
-    title: "Berry Trada | Premium Ginger Exporter and Processor",
-    description:
-      "Berry Trada is a leading exporter and processor of premium ginger, offering top-quality fresh ginger, advanced washing services, and comprehensive support for exporters. Rebuilding global trust in Indonesian ginger.",
-    type: "website",
-    url: "https://berrytrada.com",
-  },
-};
+export async function generateMetadata() {
+  const t = await getTranslations("metadata");
+  return {
+    title: t("title"),
+    description: t("description"),
+    keywords: [
+      t("keywordsText1"),
+      t("keywordsText2"),
+      t("keywordsText3"),
+      t("keywordsText4"),
+      t("keywordsText5"),
+      t("keywordsText6"),
+      t("keywordsText7"),
+      t("keywordsText8"),
+      t("keywordsText9"),
+    ],
+    authors: {
+      name: "PT Berry Trada Multipersada",
+      url: "https://berrytrada.com",
+    },
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      type: "website",
+      url: "https://berrytrada.com",
+    },
+    publisher: "https://berrytrada.com",
+    alternates: {
+      canonical: "/",
+    },
+  };
+}
 
 export default async function Home() {
   const locale = await getLocale();
@@ -53,15 +53,16 @@ export default async function Home() {
   // Providing all messages to the client
   // side is the easiest way to get started
   const messages = await getMessages();
+  console.log("locale", locale);
   return (
     <NextIntlProvider locale={locale} messages={messages}>
       <Navbar />
       <Hero />
       <Features />
       <About />
-      <Team />
+      {/* <Team /> */}
       <Portfolio />
-      <Brands />
+      {/* <Brands /> */}
       <Testimonials />
       <Pricing />
       {/* <HomeBlogSection /> */}

@@ -2,18 +2,22 @@
 import SectionTitle from "@/components/Common/SectionTitle";
 import { testimonialData } from "@/static-data/testimonial-data";
 import "swiper/css";
+import "swiper/css/navigation";
+
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SingleTestimonial from "./SingleTestimonial";
+import { useTranslations } from "next-intl";
 
 export default function Testimonials() {
+  const t = useTranslations("testimonials");
   return (
     <section id="testimonial" className="pt-14 sm:pt-20 lg:pt-[130px]">
       <div className="px-4 xl:container">
         <SectionTitle
-          mainTitle="TESTIMONIAL"
-          title="What Our Clients Say About Us"
-          paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus."
+          mainTitle={t("mainTitle")}
+          title={t("title")}
+          paragraph={t("description")}
         />
 
         <div className="w-full px-4">
@@ -76,14 +80,12 @@ export default function Testimonials() {
             <Swiper
               slidesPerView={1}
               modules={[Autoplay]}
-              // spaceBetween={64}
-              // loop={true}
-              // speed={5000}
+              loop={true}
+              speed={2000}
               // noSwiping={true}
-              // autoplay={{
-              //   delay: 0,
-              //   disableOnInteraction: true,
-              // }}
+              autoplay={{
+                delay: 3000,
+              }}
             >
               {testimonialData.map((testimonial) => (
                 <SwiperSlide key={testimonial?.id}>

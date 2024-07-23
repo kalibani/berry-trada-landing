@@ -5,6 +5,7 @@ import { portfolioData } from "@/static-data/portfolio";
 import { useState } from "react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import SinglePortfolio from "./SinglePortfolio";
+import { useTranslations } from "next-intl";
 
 export default function Portfolio() {
   const [activeTag, setActiveTag] = useState("All");
@@ -26,13 +27,15 @@ export default function Portfolio() {
     }
   };
 
+  const t = useTranslations("gallery");
+
   return (
     <section id="portfolio" className="pt-14 sm:pt-20 lg:pt-[130px]">
       <div className="px-4 xl:container">
         <SectionTitle
-          mainTitle="PORTFOLIO"
-          title="Gallery, Previews and Portfolio"
-          paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus."
+          mainTitle={t("mainTitle")}
+          title={t("title")}
+          paragraph={t("description")}
         />
 
         <div className="w-full">
@@ -41,7 +44,7 @@ export default function Portfolio() {
               className={`${activeTag === "All" ? "active" : ""} whitespace-nowrap px-5 font-heading text-base text-dark dark:text-white`}
               onClick={() => filterItems("All")}
             >
-              All
+              {t("all")}
             </button>
             {allTag.map((tag: any, i: any) => (
               <button
@@ -49,7 +52,7 @@ export default function Portfolio() {
                 className={`${activeTag === tag ? "active" : ""} whitespace-nowrap px-5 font-heading text-base capitalize text-dark dark:text-white`}
                 onClick={() => filterItems(`${tag}`)}
               >
-                {tag}
+                {t(tag)}
               </button>
             ))}
           </div>
@@ -64,7 +67,7 @@ export default function Portfolio() {
             </Masonry>
           </ResponsiveMasonry>
 
-          <div className="w-full pt-10 text-center">
+          {/* <div className="w-full pt-10 text-center">
             <a
               href="#"
               className="inline-flex items-center rounded bg-primary px-8 py-[14px] font-heading text-base text-white hover:bg-opacity-90"
@@ -85,7 +88,7 @@ export default function Portfolio() {
                 </svg>
               </span>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

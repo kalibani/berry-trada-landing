@@ -21,7 +21,7 @@ export default function RootLayout({
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
-        <meta
+        {/* <meta
           name="description"
           content="Berry Trada is a leading exporter and processor of premium ginger, offering top-quality fresh ginger, advanced washing services, and comprehensive support for exporters. Rebuilding global trust in Indonesian ginger."
         />
@@ -43,20 +43,20 @@ export default function RootLayout({
         <meta
           name="author"
           content="PT Berry Trada Multipersada | https://berrytrada.com"
-        />
+        /> */}
         <meta name="robots" content="index, follow" />
-        <meta
+        {/* <meta
           property="og:title"
           content="Berry Trada | Premium Ginger Exporter and Processor"
         />
         <meta
           property="og:description"
           content="Berry Trada is a leading exporter and processor of premium ginger, offering top-quality fresh ginger, advanced washing services, and comprehensive support for exporters. Rebuilding global trust in Indonesian ginger."
-        />
+        /> */}
         <meta property="og:image" content="/images/logo/berrytrada.png" />
-        <meta property="og:url" content="https://berrytrada.com" />
+        {/* <meta property="og:url" content="https://berrytrada.com" /> */}
         <meta property="og:type" content="website" />
-        <title>Berry Trada | Premium Ginger Exporter and Processor</title>
+        {/* <title>Berry Trada | Premium Ginger Exporter and Processor</title> */}
         <meta
           name="twitter:title"
           content="Berry Trada | Premium Ginger Exporter and Processor"
@@ -68,7 +68,11 @@ export default function RootLayout({
         <meta name="twitter:image" content="/images/logo/berrytrada.png" />
 
         {/* <!-- Favicon for All Browsers --> */}
-        <link rel="icon" href="/favicon.ico" type="image/png" />
+        <link
+          rel="icon"
+          href="/images/Logo-uk-bebas/Transparan.png"
+          type="image/png"
+        />
 
         {/* <!-- Favicon for Apple Touch Icon --> */}
         <link
@@ -118,7 +122,7 @@ export default function RootLayout({
         <ThemeProvider
           enableSystem={false}
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="light"
         >
           <AuthProvider>
             <ToasterContext />

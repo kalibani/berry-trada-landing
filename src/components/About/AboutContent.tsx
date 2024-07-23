@@ -45,10 +45,10 @@ export default function AboutContent() {
         {activeTab === "about" && (
           <TabPanel
             title={t("taglineAbout")}
-            image1="/images/about/image-1.jpg"
-            image1Alt="about image 1"
-            image2="/images/about/image-2.jpg"
-            image2Alt="about image 2"
+            image1="/images/services/team.jpeg"
+            image1Alt="exports ginger"
+            image2="/images/services/image-5.webp"
+            image2Alt="premium ginger"
           >
             <p className="mb-6 text-base text-dark-text">
               {t("descriptionAbout1")}
@@ -63,10 +63,10 @@ export default function AboutContent() {
         {activeTab === "mission" && (
           <TabPanel
             title={t("taglineMission")}
-            image1="/images/about/image-1.jpg"
-            image1Alt="about image 1"
-            image2="/images/about/image-2.jpg"
-            image2Alt="about image 2"
+            image1="/images/services/team.jpeg"
+            image1Alt="exports ginger"
+            image2="/images/services/image-5.webp"
+            image2Alt="premium ginger"
             leftContent
           >
             <p className="mb-6 text-base text-dark-text">
@@ -84,10 +84,10 @@ export default function AboutContent() {
         {activeTab === "vision" && (
           <TabPanel
             title={t("taglineVision")}
-            image1="/images/about/image-1.jpg"
-            image1Alt="about image 1"
-            image2="/images/about/image-2.jpg"
-            image2Alt="about image 2"
+            image1="/images/services/team.jpeg"
+            image1Alt="exports ginger"
+            image2="/images/services/image-5.webp"
+            image2Alt="premium ginger"
           >
             <p className="mb-6 text-base text-dark-text">
               {t("descriptionVision")}

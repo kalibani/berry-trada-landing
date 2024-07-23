@@ -1,4 +1,19 @@
 {
+  "metadata": {
+    "title": "Berry Trada | Premium Ginger Exporter and Processor",
+    "description": "Berry Trada is a leading exporter and processor of premium ginger, offering top-quality fresh ginger, advanced washing services, and comprehensive support for exporters. Ensuring the highest quality ginger from farm to market.",
+    "keywordsText1": "Premium ginger export",
+    "keywordsText2": " Ginger washing service",
+    "keywordsText3": " Fresh ginger supplier",
+    "keywordsText4": " Indonesian ginger",
+    "keywordsText5": " Post-harvest technology",
+    "keywordsText6": " Export quality ginger",
+    "keywordsText7": " Ginger packing services",
+    "keywordsText8": " High-quality ginger",
+    "keywordsText9": " Ginger Processor",
+    "ogTitle": "Berry Trada | Premium Ginger Exporter and Processor",
+    "ogDescription": "Berry Trada is a leading exporter and processor of premium ginger, offering top-quality fresh ginger, advanced washing services, and comprehensive support for exporters. Ensuring the highest quality ginger from farm to market."
+  },
   "Navbar": {
     "Services": "Services",
     "About": "About",
@@ -49,10 +64,25 @@
     "taglineVision": "Setting the Standard for Global Ginger Excellence",
     "descriptionVision": "To revolutionize the Indonesian ginger export industry by setting new standards of quality, efficiency, and trust, ensuring our ginger is recognized globally for its superior freshness and reliability."
   },
+  "gallery": {
+    "mainTitle": "PORTOFOLIO",
+    "title": "PORTFOLIO Gallery, Previews and Portfolio",
+    "description": "Explore our gallery to see the quality and care that goes into every step of our ginger processing and export.",
+    "all": "All",
+    "products": "Products",
+    "services": "Services"
+  },
+  "testimonials": {
+    "mainTitle": "Testimonial",
+    "title": "TESTIMONIAL What Our Clients Say About Us",
+    "description": "Our commitment to quality and excellence has earned us the trust and satisfaction of our clients. Read what our importers and customers of washing services have to say about their experience with us.",
+    "review1": "Their premium quality ginger is consistently fresh and flavorful. The reliability and excellent service make them our go-to supplier. We trust Berry Trada to deliver the best every time.",
+    "review2": "We have been importing ginger from Berry Trada for over a year now, and their commitment to quality is unmatched. Their use of advanced post-harvest technology ensures that we receive the freshest ginger.",
+    "review3": "Berry Trada's washing services have significantly improved the quality of our ginger. Their basic and premium washing options are thorough and efficient, ensuring our products are market-ready and free from impurities. It's a vital service for our export operations."
+  },
   "Pricing": {
     "mainTitle": "PRICING",
     "title": "Affordable Pricing With Simple Plans",
-    "subtitle": "TEst",
     "nickNameExport": "Grade A",
     "subtitleExport": "For importers",
     "descriptionExport": "Our top-quality ginger is perfect for importers looking to offer their customers the best",
@@ -74,6 +104,7 @@
     "washingService": "Washing Services",
     "gingerExport": "Ginger Exports",
     "age": "Old Ginger",
+    "capacity": "Capacity 1 Ton / Hour",
     "size": "{size} Gram up",
     "wash": "Clean & Washed",
     "postHarvest": "Post Harvest Treatment",
@@ -105,5 +136,21 @@
   "callToAction": {
     "title": "Looking for a collaboration? Contact Us Now!",
     "contactUs": "Contact Us"
+  },
+  "footer": {
+    "company": "Company",
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "pricing": "Pricing",
+    "support": "Support",
+    "pressMedia": "Press Media",
+    "ourBlog": "Our Blog",
+    "contactUs": "Contact Us",
+    "getInTouch": "Get In Touch",
+    "contactNo": "Contact No",
+    "liveSupport": "Need Live Support?",
+    "newsLetter": "News Letter",
+    "subscribe": "Subscribe to receive future updates"
   }
 }

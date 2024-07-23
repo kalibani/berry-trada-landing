@@ -1,4 +1,19 @@
 {
+  "metadata": {
+    "title": "Berry Trada | Eksporter dan Jasa Pencucian Jahe Profesional",
+    "description": "Berry Trada adalah eksportir dan pengolah jahe premium terkemuka, yang menawarkan jahe segar berkualitas tinggi, layanan pencucian canggih, dan dukungan komprehensif untuk eksportir. Memastikan jahe berkualitas tertinggi dari pertanian hingga pasar.",
+    "keywordsText1": "Ekspor jahe premium",
+    "keywordsText2": " Jasa pencucian jahe",
+    "keywordsText3": " Pemasok jahe segar",
+    "keywordsText4": " Jahe Indonesia",
+    "keywordsText5": " Teknologi pasca panen",
+    "keywordsText6": " Jahe kualitas ekspor",
+    "keywordsText7": " Jasa pengemasan jahe",
+    "keywordsText8": " Pengolahan jahe",
+    "keywordsText9": " Jahe berkualitas tinggi",
+    "ogTitle": "Berry Trada | Eksporter dan Jasa Pencucian Jahe Profesional",
+    "ogDescription": "Berry Trada adalah eksportir dan pengolah jahe premium terkemuka, yang menawarkan jahe segar berkualitas tinggi, layanan pencucian canggih, dan dukungan komprehensif untuk eksportir. Memastikan jahe berkualitas tertinggi dari pertanian hingga pasar."
+  },
   "Navbar": {
     "Services": "Layanan",
     "About": "Tentang",
@@ -29,7 +44,7 @@
     "WholesaleServiceDescription": "Berry Trada memasok jahe segar dan berkualitas tinggi ke pasar lokal dengan harga grosir. Kami menjamin jahe kami selalu segar dan berkualitas terbaik, sempurna untuk kebutuhan Anda.",
     "TubersServiceTitle": "Jasa Pencucian Umbi-Umbian",
     "TubersServiceDescription": "Layanan pencucian umbi kami memastikan umbi Anda bersih dan siap dijual. Kami menggunakan metode pembersihan yang efektif untuk menghilangkan kotoran dan kotoran, menjaga umbi dalam kondisi prima.",
-    "GingerCollectServiceTitle": "Pengumpul Jahe",
+    "GingerCollectServiceTitle": "Menerima Jahe",
     "GingerCollectServiceDescription": "Sebagai pedagang jahe yang andal, Berry Trada menerima Jahe dengan kuota tidak terbatas. Kami memastikan harga yang adil dan dukungan untuk petani, membawa jahe terbaik ke pasar.",
     "GingerPlantingServiceTitle": "Kemitraan Penanaman Jahe",
     "GingerPlantingServiceDescription": "Bermitra dengan Berry Trada untuk menanam jahe di lahan Anda. Kami menyediakan bibit, pengetahuan dan dukungan yang dibutuhkan untuk menanam jahe berkualitas tinggi, memastikan panen yang baik dan manfaat bagi semua pihak yang terlibat."
@@ -49,10 +64,25 @@
     "taglineVision": "Menetapkan Standar Keunggulan Jahe Global",
     "descriptionVision": "Visi kami adalah menjadi nama terkemuka dalam industri jahe, diakui karena komitmen kami terhadap kualitas, inovasi, dan keberlanjutan. Kami membayangkan masa depan di mana"
   },
+  "gallery": {
+    "mainTitle": "PORTOFOLIO",
+    "title": "Galeri, Pratinjau dan Portofolio",
+    "description": "Jelajahi galeri kami untuk melihat kualitas dan perhatian yang kami berikan pada setiap langkah pengolahan dan ekspor jahe kami.",
+    "all": "Semua",
+    "products": "Produk",
+    "services": "Layanan"
+  },
+  "testimonials": {
+    "mainTitle": "Testimonial",
+    "title": "Kata Klien Tentang Kami",
+    "description": "Di Berry Trada, komitmen kami terhadap kualitas dan keunggulan telah membuat kami mendapatkan kepercayaan dan kepuasan klien kami. Baca apa yang dikatakan importir dan pelanggan layanan cuci kami tentang pengalaman mereka bersama kami.",
+    "review1": "Jahe kualitas premium mereka secara konsisten segar dan beraroma. Keandalan dan layanan terbaik menjadikan mereka pemasok utama kami. Kami mempercayai Berry Trada untuk memberikan yang terbaik setiap saat.",
+    "review2": "Kami telah mengimpor jahe dari Berry Trada selama lebih dari setahun, dan komitmen mereka terhadap kualitas tidak tertandingi. Penggunaan teknologi pasca panen yang canggih memastikan kami menerima jahe paling segar.",
+    "review3": "Layanan pencucian Berry Trada telah meningkatkan kualitas jahe kami secara signifikan. Pilihan pencucian dasar dan premiumnya menyeluruh dan efisien, memastikan produk kami siap dipasarkan dan bebas dari kotoran. Ini adalah layanan penting untuk operasi ekspor kami."
+  },
   "Pricing": {
     "mainTitle": "HARGA",
     "title": "Harga Terjangkau dengan Paket Sederhana",
-    "subtitle": "TEst",
     "nickNameExport": "Grade A",
     "subtitleExport": "Untuk Importir",
     "descriptionExport": "Sempurna untuk importir yang ingin menawarkan produk terbaik kepada pelanggan mereka.",
@@ -74,6 +104,7 @@
     "washingService": "Jasa Cuci",
     "gingerExport": "Ekspor Jahe",
     "age": "Jahe Tua",
+    "capacity": "Kapasitas 1 Ton / Jam",
     "size": "{size} Gram up",
     "wash": "Cuci Bersih",
     "postHarvest": "Teknologi Pasca Panen",
@@ -105,5 +136,21 @@
   "callToAction": {
     "title": "Kolaborasi? Hubungi kami sekarang!",
     "contactUs": "Hubungi kami"
+  },
+  "footer": {
+    "company": "Perusahaan",
+    "home": "Home",
+    "services": "Layanan",
+    "about": "Tentang",
+    "pricing": "Harga",
+    "support": "Dukungan",
+    "pressMedia": "Press Media",
+    "ourBlog": "Blog Kami",
+    "contactUs": "Hubungi kami",
+    "getInTouch": "Get In Touch",
+    "contactNo": "Nomor Kontak",
+    "liveSupport": "Butuh Dukungan Langsung?",
+    "newsLetter": "Surat Kabar",
+    "subscribe": "Subscribe untuk mendapat kabar terbaru"
   }
 }
