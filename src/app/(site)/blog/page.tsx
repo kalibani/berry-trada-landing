@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 export default async function BlogPage() {
-  const posts = await getPosts();
+  // const posts = await getPosts();
 
   return (
     <>
@@ -20,10 +20,10 @@ export default async function BlogPage() {
         <div className="px-4 xl:container">
           <div className="w-full border-b pb-20 dark:border-[#2E333D]">
             <div className="-mx-4 flex flex-wrap">
-              {posts.length > 0 &&
+              {/* {posts.length > 0 &&
                 posts.map((blog: Blog) => (
                   <SingleBlog key={blog?._id} blog={blog} />
-                ))}
+                ))} */}
             </div>
           </div>
         </div>
