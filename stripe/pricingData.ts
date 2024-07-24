@@ -15,7 +15,7 @@ export const pricingDataService = [
   },
   {
     id: "price_1NQk4eLtGdPVhGLeZsZDsCNzz",
-    unit_amount: 18500 * 100,
+    unit_amount: 17500 * 100,
     nickname: "nickNameWashingComplete",
     subtitle: "subtitleWashingComplete",
     description: "descriptionWashingComplete",
