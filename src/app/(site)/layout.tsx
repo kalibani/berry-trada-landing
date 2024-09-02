@@ -113,7 +113,7 @@ export default function RootLayout({
         {/* <!-- Manifest for Android --> */}
         <link rel="manifest" href="/site.webmanifest" />
         {/* <!-- Meta Pixel Code --> */}
-        <script
+        <Script
           dangerouslySetInnerHTML={{
             __html: `
             !function(f,b,e,v,n,t,s)
